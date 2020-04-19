@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r7yl8LF8esoIta6kw+vTiKN0pMdt/2bK5I3ZzErtOpCrv4uyzv35kmuPytLyWpXs3Je7oHw+X/y6oE4F0hUTTQ==",
+  "dgSpecHash": "tjNKExcWUQ94NXjJ/x/SyavnHyvbTPUrUCWfVq8HwstnNIVO2TDnyPIAFGNl5QTPxtD/wfvHbOtnQax9W/267w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zkatinas\\source\\repos\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409.csproj",
+  "projectFilePath": "C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zkatinas\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
