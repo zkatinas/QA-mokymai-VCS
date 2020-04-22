@@ -1,42 +1,30 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using System;
+﻿using OpenQA.Selenium;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Collections.Generic;
-using System.Text;
+
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
-    class KikaHomePage
-    {
-        private IWebDriver driver;
-        public KikaHomePage(IWebDriver driver)
-        {
-            this.driver = driver;
-        }        
-
-        private IWebElement elementLoginIconButton => driver.FindElement(By.CssSelector(".need2login"));
+    public class KikaHomePage : BasePage
+    {        
+        //Konstruktoriu gaunam is BasePage klases (su"base") ir cia uztenka tuscio konstruktoriaus
+        public KikaHomePage(IWebDriver driver) : base(driver) { }        
+                
         private IList<IWebElement> visibleItems => driver.FindElements(By.CssSelector(".owl-item.active"));
-        //private string itemCountInCartBeforeBuy => driver.FindElement(By.CssSelector("em.cnt")).Text;       
-        //private string zeroItemInCart = "0";
-        //private string itemCountInCartAfterBuy => driver.FindElement(By.CssSelector("em.cnt")).Text;
-        //private string oneItemInCart = "1";
-        private string itemCountInCart => driver.FindElement(By.CssSelector("em.cnt")).Text;
 
-        public void ClickLoginIconButton()
-        {
-            elementLoginIconButton.Click();
-        }
+        public KikaHeaderSection header => new KikaHeaderSection(driver);
+        public LoginModal login => new LoginModal(driver);
 
         public void ClickFirstItem()
         {
             visibleItems[0].Click();
         }
 
-        public void AssertCartIconNumber(string itemNumber)
+       public KikaHomePage Login(User user)
         {
-            Assert.AreEqual(itemNumber, itemCountInCart);
+            header.ClickLoginIconButton();
+            login.Login(user.Username, user.Password);            
+            return this;
         }
-
     }
 }

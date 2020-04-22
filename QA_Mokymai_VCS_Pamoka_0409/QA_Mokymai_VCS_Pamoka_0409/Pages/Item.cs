@@ -6,14 +6,9 @@ using System.Text;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
-    class Item
+    public class Item : BasePage
     {
-        private IWebDriver driver;
-
-        public Item(IWebDriver driver)
-        {
-            this.driver = driver;
-        }
+        public Item(IWebDriver driver) : base(driver) {  }
 
 
 

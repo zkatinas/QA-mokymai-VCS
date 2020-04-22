@@ -1,19 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
-    class PopUpModal
-    {
-        private IWebDriver driver;        
-
-        public PopUpModal(IWebDriver driver)
-        {
-            this.driver = driver;
-        }
+    public class PopUpModal : BasePage
+    {       
+        public PopUpModal(IWebDriver driver) : base(driver)  {   }
 
         private By elementPopupCloseButtonSelector = By.CssSelector("#editable_popup[style*='display: block;'] .close");        
 

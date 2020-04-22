@@ -1,21 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
-    class Cart
+    public class Cart : BasePage
     {
-        private IWebDriver driver;
-
-        public Cart(IWebDriver driver)
-        {
-            this.driver = driver;
-        }
-
-        private IWebElement elementCart => driver.FindElement(By.Id("cart_info"));  
+        public Cart(IWebDriver driver) : base(driver) { }
+              
         
 
         //TO DO ??????????????????
@@ -31,12 +22,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         private IWebElement elementProfileMenuButton => driver.FindElement(By.CssSelector("#profile_menu .ico.ico-profile"));
         private By elementLogOutSelector = By.CssSelector("#profile_menu a[href='?logout']");
         private IWebElement elementLogOut => driver.FindElement(elementLogOutSelector);   
-        
-
-        public void GoToCart()
-        {
-            elementCart.Click();
-        }
+                
 
         public void RemoveItemFromCart()
         {

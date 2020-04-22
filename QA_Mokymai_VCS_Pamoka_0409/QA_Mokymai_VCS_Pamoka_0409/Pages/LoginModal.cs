@@ -1,19 +1,10 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
-    class LoginModal
-    {
-
-        private IWebDriver driver;
-
-        public LoginModal(IWebDriver driver)
-        {
-            this.driver = driver;
-        }
+    public class LoginModal : BasePage
+    {   
+        public LoginModal(IWebDriver driver) : base(driver) {  }
 
         private const string LoginFormId = "login_form";
 
