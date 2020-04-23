@@ -8,19 +8,26 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
     public class AddOneItemKika : BaseTest
     {
+        
+        [SetUp]
+        public void Before()
+        {
+            //Kai tinka default user
+            //LoginWithDefaultUser();
+            popUpModal.ClosePopUpModal();
+            Thread.Sleep(2000);
+            kikaHomePage.header.ClickLoginIconButton();
+            Thread.Sleep(2000);            
+            LoginWithtUser("testeris888@test.lt", "testeris888");
+        }
+                
+        
         [Test]
         public void AddFirstFoodInList()
         {
-            //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            
-       
-
-            //TestLogin();
-
-            //Patikriname, ar krepselyje nera prekiu
-            //string itemCountInCartBeforeBuy = driver.FindElement(By.CssSelector("em.cnt")).Text;
-            //string zeroItemInCart = "0";
-            //Assert.AreEqual(itemCountInCartBeforeBuy, zeroItemInCart);
+            //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));   
+            Thread.Sleep(2000);
+            //Patikriname, ar krepselyje nera prekiu            
             kikaHomePage.header.AssertCartIconNumber("0");
 
             //Parenkame pirma rodoma item

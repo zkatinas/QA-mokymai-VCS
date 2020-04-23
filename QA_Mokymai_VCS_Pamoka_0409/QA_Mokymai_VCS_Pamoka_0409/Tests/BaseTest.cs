@@ -1,7 +1,12 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.VisualBasic;
+using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.Extensions;
 using QA_Mokymai_VCS_Pamoka_0409.Pages;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
+using System;
+using System.IO;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
@@ -36,8 +41,50 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         [TearDown]
         public void QuitDriver()
         {
+            //Kvieciame metoda del screenshot'u TearDown'e
+            MakeScreenshotOnTestFailure();
             driver.Close();
             driver.Dispose();
+        }
+
+
+        protected void LoginWithDefaultUser()
+        {
+            kikaHomePage.Login(User.DefaultKikaUser);
+        }
+
+        //protected void LoginWithtUser(User user)
+        //{
+        //    LoginWithtUser(user.Username, user.Password);
+        //}
+
+        protected void LoginWithtUser(string username, string password)
+        {
+            kikaHomePage.loginModal.Login(username, password);
+        }
+
+
+        protected void MakeScreenshotOnTestFailure()
+        {
+            if (TestContext.CurrentContext.Result.Outcome.Status != TestStatus.Passed)
+            {
+                DoScreenshot();
+            }
+        }
+
+        protected void DoScreenshot()
+        {
+            Screenshot screenshot = driver.TakeScreenshot();
+            string screenshotPath = $"{TestContext.CurrentContext.WorkDirectory}/Screenshots";
+            Directory.CreateDirectory(screenshotPath);
+            string screenshotFile = Path.Combine(screenshotPath, $"{TestContext.CurrentContext.Test.Name}_{DateAndTime.Now.ToString("yy-MM-dd HH:mm:ss")}.jpg");
+
+            screenshot.SaveAsFile(screenshotFile, ScreenshotImageFormat.Jpeg);
+            Console.WriteLine("screenshot: file://" + screenshotFile);
+
+            // Add that file to NUnit results
+            TestContext.AddTestAttachment(screenshotFile, "My Screenshot");
+            //return screenshot.AsByteArray;
         }
 
     }

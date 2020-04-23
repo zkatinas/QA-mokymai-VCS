@@ -13,7 +13,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         private IList<IWebElement> visibleItems => driver.FindElements(By.CssSelector(".owl-item.active"));
 
         public KikaHeaderSection header => new KikaHeaderSection(driver);
-        public LoginModal login => new LoginModal(driver);
+        public LoginModal loginModal => new LoginModal(driver);
 
         public void ClickFirstItem()
         {
@@ -23,7 +23,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
        public KikaHomePage Login(User user)
         {
             header.ClickLoginIconButton();
-            login.Login(user.Username, user.Password);            
+            loginModal.Login(user.Username, user.Password);            
             return this;
         }
     }
