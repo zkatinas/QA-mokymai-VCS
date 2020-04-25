@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -19,7 +20,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
             ClickLoginFormButton();
         }
         
-       //Pakeiciam "void" i pati "LoginModal" keliuose metoduose, gauname "chain" kviesdami siuos metodus
+
+        //Pakeiciam "void" i pati "LoginModal" keliuose metoduose, gauname "chain" kviesdami siuos metodus
         public LoginModal EnterEmail(string email)
         {
             elementEmailInput.SendKeys(email);

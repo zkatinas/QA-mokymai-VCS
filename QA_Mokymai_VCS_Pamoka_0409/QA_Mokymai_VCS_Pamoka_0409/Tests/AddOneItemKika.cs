@@ -1,7 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
@@ -12,7 +9,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         [SetUp]
         public void Before()
         {
-            //Kai tinka default user
+            //Kai tinka default user:
             //LoginWithDefaultUser();
             popUpModal.ClosePopUpModal();
             Thread.Sleep(2000);
@@ -30,10 +27,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             //Patikriname, ar krepselyje nera prekiu            
             kikaHomePage.header.AssertCartIconNumber("0");
 
-            //Parenkame pirma rodoma item
-            //IList<IWebElement> visibleItems = driver.FindElements(By.CssSelector(".owl-item.active"));            
+            //Parenkame pirma rodoma item                        
             kikaHomePage.ClickFirstItem();
-
 
 
             //TO DO ?????????????????????
@@ -45,28 +40,14 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 
 
 
-
-            //Parenkame item kieki
-            //IList<IWebElement> selcetQuantity = driver.FindElements(By.CssSelector(".qty-select .plus"));
-            //selectQuantity[0].Click();
+            //Parenkame item kieki            
             item.SelectItemQuantity();
-
-            //IWebElement elementAddToCartButton = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.Id("add2cart_button")));
-            //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementAddToCartButtonSelector));            
-            //elementAddToCartButton.Click();
             item.AddToCart();
 
             //Patikriname, ar item idetas i krepseli
-            Thread.Sleep(3500);
-            //string itemCountInCartAfterBuy = driver.FindElement(By.CssSelector("em.cnt")).Text;
-            //string oneItemInCart = "1";
-            //Assert.AreEqual(itemCountInCartAfterBuy, oneItemInCart);
+            Thread.Sleep(3500);            
             kikaHomePage.header.AssertCartIconNumber("1");
-
-            //IWebElement elementCart = driver.FindElement(By.Id("cart_info"));
-            //elementCart.Click();
             kikaHomePage.header.GoToCart();
-
 
 
             // ???????????????????
@@ -82,8 +63,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 
             cart.RemoveItemFromCart();
             Thread.Sleep(2000);
-            cart.ProfileMenuDisplay();
-            cart.LogOut();
+            kikaHomePage.header.ProfileMenuDisplay();
+            kikaHomePage.header.LogOut();
 
             Thread.Sleep(3000);
         }

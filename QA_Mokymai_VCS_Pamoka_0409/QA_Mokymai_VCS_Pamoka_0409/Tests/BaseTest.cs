@@ -3,6 +3,7 @@ using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.Extensions;
+using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Pages;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System;
@@ -19,9 +20,10 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         protected PopUpModal popUpModal;
         protected Item item;
         protected Cart cart;
+       
 
         [SetUp]
-        public void BeforeTest()
+        public void BaseBeforeTest()
         {            
             driver = Driver.Init();
             InitPages();
@@ -48,6 +50,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         }
 
 
+        //Neveikia???
         protected void LoginWithDefaultUser()
         {
             kikaHomePage.Login(User.DefaultKikaUser);

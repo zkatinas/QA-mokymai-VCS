@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
@@ -11,34 +12,37 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         //TO DO ??????????????????
         //Not used in assertion
-        private string itemInCartName => driver.FindElement(By.CssSelector("#cart_items .product_name")).Text;
+        private string itemInCartNameWithCode => driver.FindElement(By.CssSelector("#cart_items .product_name")).Text;
+        private string[] itemInCartNameWithCodeList => itemInCartPriceWithTitle.Split("\r");
+        private string itemInCartName => itemInCartNameWithCodeList[0];
         private string itemInCartPriceWithTitle => driver.FindElement(By.CssSelector("#cart_items .price")).Text;
-        private string[] list => itemInCartPriceWithTitle.Split("\n");
-        private string itemInCartPrice => list[1];
-        
+        private string[] itemInCartPriceWithTitleList => itemInCartPriceWithTitle.Split("\r");
+        private string itemInCartPrice => itemInCartPriceWithTitleList[1];
+
+        private string itemInCartQuantity => driver.FindElement(By.CssSelector(".value")).Text;
 
 
         private IWebElement elementRemoveItemFromCart => driver.FindElement(By.CssSelector("#cart_items .cart_remove"));
-        private IWebElement elementProfileMenuButton => driver.FindElement(By.CssSelector("#profile_menu .ico.ico-profile"));
-        private By elementLogOutSelector = By.CssSelector("#profile_menu a[href='?logout']");
-        private IWebElement elementLogOut => driver.FindElement(elementLogOutSelector);   
-                
+        private By emptyCartMessageSelector = By.CssSelector("#cart_detailed .alert");
+        private string emptyCartMessage => driver.FindElement(emptyCartMessageSelector).Text;        
+
+
+        public void AssertItemCountInCart(string expectedItemNumber)
+        {
+            Assert.AreEqual(expectedItemNumber, itemInCartQuantity);
+        }
+
+        public void AssertIfCartIsEmpty(string expectedMessage)
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(emptyCartMessageSelector));
+            Assert.AreEqual(expectedMessage, emptyCartMessage);
+        }
 
         public void RemoveItemFromCart()
         {
             elementRemoveItemFromCart.Click();
         }
-
-        public void ProfileMenuDisplay()
-        {
-            elementProfileMenuButton.Click();
-        }
-
-        public void LogOut()
-        {
-            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLogOutSelector));
-            elementLogOut.Click();
-        }
+        
     }
 }

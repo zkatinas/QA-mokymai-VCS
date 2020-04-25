@@ -19,8 +19,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             kikaHomePage.header
                 .ClickOnSearchIcon()
                 .Search(searchInput).
-                AssertSearchResultsContainsText(searchInput);
-            //assert
+                AssertSearchResultsContainsText(searchInput);           
         }
 
 
