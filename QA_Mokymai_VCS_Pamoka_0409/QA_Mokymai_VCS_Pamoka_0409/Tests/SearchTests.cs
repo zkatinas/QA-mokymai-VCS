@@ -16,7 +16,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         public void TestSearchWorks()
         {
             var searchInput = "canin";
-            kikaHomePage.header
+            kikaHomePage.Header
                 .ClickOnSearchIcon()
                 .Search(searchInput).
                 AssertSearchResultsContainsText(searchInput);           

@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium.Support.UI;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
@@ -10,12 +11,12 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         [Test]
         public void TestLogin()
         {
-            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+            WebDriverWait wait = new WebDriverWait(Driver.Current, System.TimeSpan.FromSeconds(5));
             Thread.Sleep(2000);                    
             popUpModal.ClosePopUpModal();
 
             Thread.Sleep(2000);                       
-            kikaHomePage.header.ClickLoginIconButton();
+            kikaHomePage.Header.ClickLoginIconButton();
 
             Thread.Sleep(1500);                      
             loginModal.EnterEmail("testeris888@test.lt");          

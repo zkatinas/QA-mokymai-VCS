@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -6,9 +7,11 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
     {
         protected IWebDriver driver;
 
-        protected BasePage(IWebDriver driver)
+        public KikaHeaderSection Header => new KikaHeaderSection();
+
+        protected BasePage()
         {
-            this.driver = driver;
+            driver = Driver.Current;
         }
     }
 }

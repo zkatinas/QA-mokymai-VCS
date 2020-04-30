@@ -6,10 +6,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
     public class Cart : BasePage
     {
-        public Cart(IWebDriver driver) : base(driver) { }
-              
-        
-
+       
         //TO DO ??????????????????
         //Not used in assertion
         private string itemInCartNameWithCode => driver.FindElement(By.CssSelector("#cart_items .product_name")).Text;

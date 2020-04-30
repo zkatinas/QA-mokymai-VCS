@@ -1,8 +1,4 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
@@ -13,8 +9,9 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         [SetUp]
         public void BeforeTest()
         {            
-            popUpModal.ClosePopUpModal(); 
-            kikaHomePage.header.ClickLoginIconButton();
+            popUpModal.ClosePopUpModal();
+            Thread.Sleep(2000);
+            kikaHomePage.Header.ClickLoginIconButton();
             Thread.Sleep(2000);
             LoginWithtUser("testeris888@test.lt", "testeris888");
         }
@@ -24,20 +21,23 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         {
 
             Thread.Sleep(2000);
-            kikaHomePage.header.AssertCartIconNumber("0");
-            kikaHomePage.NavigateToDogToyList();
+            kikaHomePage.Header.AssertCartIconNumber("0");
+            pageMenuSection.NavigateToDogToyList();
+
+            // Naviguojam tiesiai per sunu zaislu url:
+            //Navigation.GoToDogToysPage();
 
             item.AddToCartFirstItemFromItemList();
-            kikaHomePage.header.GoToCart();
+            kikaHomePage.Header.GoToCart();
             cart.AssertItemCountInCart("1");
-            //Assert iten mane, price, quantity ???
-            kikaHomePage.header.AssertCartIconNumber("1");
+            //Assert item mane, price, quantity ???
+            kikaHomePage.Header.AssertCartIconNumber("1");
             cart.RemoveItemFromCart();
             cart.AssertIfCartIsEmpty("Krepšelis yra tuščias");
-            kikaHomePage.header.AssertCartIconNumber("0");
+            kikaHomePage.Header.AssertCartIconNumber("0");
 
-            kikaHomePage.header.ProfileMenuDisplay();
-            kikaHomePage.header.LogOut();  
+            kikaHomePage.Header.ProfileMenuDisplay();
+            kikaHomePage.Header.LogOut();  
 
             Thread.Sleep(3000);
         }

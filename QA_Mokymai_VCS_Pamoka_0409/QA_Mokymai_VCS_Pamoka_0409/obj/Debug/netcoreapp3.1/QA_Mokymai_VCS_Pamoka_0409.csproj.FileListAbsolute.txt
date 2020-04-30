@@ -189,10 +189,11 @@ C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.csprojAssemblyReference.cache
-C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.csproj.CoreCompileInputs.cache
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.AssemblyInfoInputs.cache
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.AssemblyInfo.cs
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.csproj.CopyComplete
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.dll
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.pdb
 C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.genruntimeconfig.cache
+C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\obj\Debug\netcoreapp3.1\QA_Mokymai_VCS_Pamoka_0409.csproj.CoreCompileInputs.cache

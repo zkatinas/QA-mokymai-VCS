@@ -1,14 +1,13 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
-    public class KikaHeaderSection : BasePage
+    public class KikaHeaderSection
     {
-        public KikaHeaderSection(IWebDriver driver) : base(driver)
-        {
-        }
+        private IWebDriver driver => Driver.Current;
 
         private By elementLoginIconButtonSelector = By.CssSelector("#profile_menu .need2login");
         private IWebElement elementLoginIconButton => driver.FindElement(elementLoginIconButtonSelector);
@@ -23,15 +22,16 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void ClickLoginIconButton()
         {
+            // Try catch ?? Nes interceptina click'a.
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementLoginIconButtonSelector));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLoginIconButtonSelector));
             elementLoginIconButton.Click();
         }
 
         public SearchPage ClickOnSearchIcon()
         {
             elementSearchIcon.Click();
-            return new SearchPage(driver);
+            return PageFactory.SearchPage;
         }
 
         public void AssertCartIconNumber(string itemNumber)

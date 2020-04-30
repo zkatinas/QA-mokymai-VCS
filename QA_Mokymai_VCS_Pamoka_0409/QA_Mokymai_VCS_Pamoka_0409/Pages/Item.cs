@@ -6,13 +6,10 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
     public class Item : BasePage
     {
-        public Item(IWebDriver driver) : base(driver) {  }
-
-
-
+        
         //TO DO ??????????????????
         //Not used in assertion
-        private string itemNameInItempage => driver.FindElement(By.CssSelector(".summary_wrp h1")).Text;
+        private string itemNameInItemPage => driver.FindElement(By.CssSelector(".summary_wrp h1")).Text;
         private IList<IWebElement> itemPriceList => driver.FindElements(By.CssSelector(".prices .price"));
         private string itemPriceInItemPage => itemPriceList[0].Text;
 

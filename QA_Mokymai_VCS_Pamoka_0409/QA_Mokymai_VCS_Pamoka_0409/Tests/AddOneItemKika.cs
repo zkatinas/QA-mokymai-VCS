@@ -13,7 +13,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             //LoginWithDefaultUser();
             popUpModal.ClosePopUpModal();
             Thread.Sleep(2000);
-            kikaHomePage.header.ClickLoginIconButton();
+            kikaHomePage.Header.ClickLoginIconButton();
             Thread.Sleep(2000);            
             LoginWithtUser("testeris888@test.lt", "testeris888");
         }
@@ -25,7 +25,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));   
             Thread.Sleep(2000);
             //Patikriname, ar krepselyje nera prekiu            
-            kikaHomePage.header.AssertCartIconNumber("0");
+            kikaHomePage.Header.AssertCartIconNumber("0");
 
             //Parenkame pirma rodoma item                        
             kikaHomePage.ClickFirstItem();
@@ -46,8 +46,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 
             //Patikriname, ar item idetas i krepseli
             Thread.Sleep(3500);            
-            kikaHomePage.header.AssertCartIconNumber("1");
-            kikaHomePage.header.GoToCart();
+            kikaHomePage.Header.AssertCartIconNumber("1");
+            kikaHomePage.Header.GoToCart();
 
 
             // ???????????????????
@@ -63,8 +63,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 
             cart.RemoveItemFromCart();
             Thread.Sleep(2000);
-            kikaHomePage.header.ProfileMenuDisplay();
-            kikaHomePage.header.LogOut();
+            kikaHomePage.Header.ProfileMenuDisplay();
+            kikaHomePage.Header.LogOut();
 
             Thread.Sleep(3000);
         }
