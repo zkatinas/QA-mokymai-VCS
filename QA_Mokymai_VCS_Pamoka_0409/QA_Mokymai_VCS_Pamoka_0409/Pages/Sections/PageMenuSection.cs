@@ -18,8 +18,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
 
         public void NavigateToDogToyList()
-        {
-            // To DO
+        {            
             Actions action = new Actions(driver);
             action.MoveToElement(elementDogAllItemCategory).Perform();
             elementDogToyItemCategory.Click();

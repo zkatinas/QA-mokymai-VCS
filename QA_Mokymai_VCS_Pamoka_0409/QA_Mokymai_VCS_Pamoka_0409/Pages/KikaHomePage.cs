@@ -8,28 +8,16 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
     public class KikaHomePage : BasePage
     {        
-        //Konstruktoriaus nebereikia -default pagal BasePage klase (su"base") ir cia uztenka tuscio konstruktoriaus
-              
+        //Konstruktoriaus nebereikia -default pagal BasePage klase (su"base") ir cia uztenka tuscio konstruktoriaus              
                 
-        private IList<IWebElement> visibleItems => driver.FindElements(By.CssSelector(".owl-item.active"));
-
-        //private IWebElement elementDogAllItemCategory => driver.FindElement(By.CssSelector("#mega_menu .dog .title"));
-        //private IWebElement elementDogToyItemCategory => driver.FindElement(By.CssSelector("#mega_menu .dog.active.hover [title = 'Žaislai']"));
+        private IList<IWebElement> visibleItems => driver.FindElements(By.CssSelector(".owl-item.active"));        
                 
         public LoginModal loginModal => new LoginModal();
 
         public void ClickFirstItem()
         {
             visibleItems[0].Click();
-        }
-
-        // public void NavigateToDogToyList()
-        // {
-        //     // To DO
-        //     Actions action = new Actions(driver);
-        //     action.MoveToElement(elementDogAllItemCategory).Perform();
-        //     elementDogToyItemCategory.Click();
-        // }
+        }        
 
         public KikaHomePage Login(User user)
         {

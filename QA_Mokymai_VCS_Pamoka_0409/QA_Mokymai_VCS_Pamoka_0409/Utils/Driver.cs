@@ -52,6 +52,11 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
         {
             Current.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(seconds);
         }
+
+        public static void RefreshPage()
+        {
+            Current.Navigate().Refresh();
+        }
     }
     public enum Browser
     {

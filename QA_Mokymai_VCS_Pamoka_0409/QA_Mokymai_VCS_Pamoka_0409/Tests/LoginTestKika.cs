@@ -13,9 +13,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         {
             WebDriverWait wait = new WebDriverWait(Driver.Current, System.TimeSpan.FromSeconds(5));
             Thread.Sleep(2000);                    
-            popUpModal.ClosePopUpModal();
-
-            Thread.Sleep(2000);                       
+            popUpModal.ClosePopUpModal();                                   
             kikaHomePage.Header.ClickLoginIconButton();
 
             Thread.Sleep(1500);                      

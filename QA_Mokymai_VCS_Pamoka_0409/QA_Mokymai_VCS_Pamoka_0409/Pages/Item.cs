@@ -9,29 +9,23 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         
         //TO DO ??????????????????
         //Not used in assertion
-        private string itemNameInItemPage => driver.FindElement(By.CssSelector(".summary_wrp h1")).Text;
+        private IWebElement itemNameInItemPage => driver.FindElement(By.CssSelector(".summary_wrp h1"));
         private IList<IWebElement> itemPriceList => driver.FindElements(By.CssSelector(".prices .price"));
-        private string itemPriceInItemPage => itemPriceList[0].Text;
-
-        // How to assert - different class???
-        private IList<IWebElement> itemNameListInItemListPage => driver.FindElements(By.CssSelector(".product_element .title"));
-        private string firstItemNameFromItemList => itemNameListInItemListPage[0].Text;
-        private IList<IWebElement> itemPriceListInItemListPage => driver.FindElements(By.CssSelector(".product_element .price"));
-        private string firstItemPriceFromItemList => itemPriceListInItemListPage[0].Text;
-
-        private By elementAddToCartButtonSelector = By.Id("add2cart_button");
-        private By itemAddToCartButtonListSelector = By.CssSelector(".product_element .buttons .btn-primary");
+        private IWebElement itemPriceInItemPage => itemPriceList[0];
+        
+        private By elementAddToCartButtonSelector = By.Id("add2cart_button");        
         private IWebElement elementAddToCartButton => driver.FindElement(elementAddToCartButtonSelector);
         private IList<IWebElement> selectItemQuantity => driver.FindElements(By.CssSelector(".qty-select .plus"));
-        private IList<IWebElement> itemAddToCartButtonList => driver.FindElements(itemAddToCartButtonListSelector);
+        
+        public string GetItemName()
+        {
+            return itemNameInItemPage.Text;
+        }
 
-        //TO DO ??????????????????
-        //public string GetItemName()
-        //{
-        //    return itemName;
-        //}
-
-
+        public string GetItemPrice()
+        {
+            return itemPriceInItemPage.Text;
+        }
 
         public void SelectItemQuantity()
         {
@@ -43,13 +37,6 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementAddToCartButtonSelector));
             elementAddToCartButton.Click();
-        }
-
-        public void AddToCartFirstItemFromItemList()
-        {
-            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(itemAddToCartButtonListSelector));
-            itemAddToCartButtonList[0].Click();
-        }
+        }       
     }
 }

@@ -23,9 +23,24 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         public void ClickLoginIconButton()
         {
             // Try catch ?? Nes interceptina click'a.
-            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLoginIconButtonSelector));
-            elementLoginIconButton.Click();
+            for (int i = 0; i < 4; i++)
+            {
+                try
+                {
+                    elementLoginIconButton.Click();
+                    break;
+                }
+                catch (ElementClickInterceptedException)
+                {
+                    continue;
+                }
+
+            }
+            
+            
+            //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+            //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLoginIconButtonSelector));
+            //elementLoginIconButton.Click();
         }
 
         public SearchPage ClickOnSearchIcon()
@@ -39,12 +54,12 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
             Assert.AreEqual(itemNumber, itemCountInCart);
         }
 
-        public void GoToCart()
+        public void ClickOnCartIcon()
         {
             elementCart.Click();
         }
 
-        public void ProfileMenuDisplay()
+        public void ClickOnProfileMenuIcon()
         {
             elementProfileMenuButton.Click();
         }

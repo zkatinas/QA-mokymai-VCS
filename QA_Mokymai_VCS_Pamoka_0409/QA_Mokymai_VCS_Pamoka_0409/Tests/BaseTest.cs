@@ -20,6 +20,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         protected Item item => PageFactory.Item;
         protected Cart cart => PageFactory.Cart;
         protected PageMenuSection pageMenuSection => PageFactory.PageMenuSection;
+        protected ItemListing itemListing => PageFactory.ItemListing;
 
 
         [SetUp]
@@ -53,6 +54,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 
         protected void LoginWithtUser(string username, string password)
         {
+            
             kikaHomePage.loginModal.Login(username, password);
         }
 

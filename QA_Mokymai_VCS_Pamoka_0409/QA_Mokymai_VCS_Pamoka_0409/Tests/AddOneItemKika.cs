@@ -11,18 +11,15 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         {
             //Kai tinka default user:
             //LoginWithDefaultUser();
-            popUpModal.ClosePopUpModal();
-            Thread.Sleep(2000);
+            popUpModal.ClosePopUpModal();            
             kikaHomePage.Header.ClickLoginIconButton();
-            Thread.Sleep(2000);            
+            Thread.Sleep(2000);
             LoginWithtUser("testeris888@test.lt", "testeris888");
-        }
-                
+        }                
         
         [Test]
         public void AddFirstFoodInList()
-        {
-            //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));   
+        {               
             Thread.Sleep(2000);
             //Patikriname, ar krepselyje nera prekiu            
             kikaHomePage.Header.AssertCartIconNumber("0");
@@ -30,15 +27,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             //Parenkame pirma rodoma item                        
             kikaHomePage.ClickFirstItem();
 
-
-            //TO DO ?????????????????????
-
-            //string itemName = driver.FindElement(By.CssSelector(".summary_wrp h1")).Text;
-            //item.GetItemName();
-            //IList<IWebElement> itemPriceList = driver.FindElements(By.CssSelector(".prices .price"));
-            //string itemPrice = itemPriceList[0].Text;
-
-
+            var itemFromListName = item.GetItemName();
+            var itemFromListPrice = item.GetItemPrice();  
 
             //Parenkame item kieki            
             item.SelectItemQuantity();
@@ -47,23 +37,14 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             //Patikriname, ar item idetas i krepseli
             Thread.Sleep(3500);            
             kikaHomePage.Header.AssertCartIconNumber("1");
-            kikaHomePage.Header.GoToCart();
+            kikaHomePage.Header.ClickOnCartIcon();
 
-
-            // ???????????????????
-            //TO DO: assert item name/price with item in cart name/price - variables from 2
-
-            //string itemInCartName = driver.FindElement(By.CssSelector("#cart_items .product_name")).Text;
-            //string itemInCartPriceWithTitle = driver.FindElement(By.CssSelector("#cart_items .price")).Text;
-            //string[] list = itemInCartPriceWithTitle.Split("\n");            
-            //string itemInCartPrice = list[1];           
-            //Assert.AreEqual(itemName, itemInCartName);
-            //Assert.AreEqual(itemPrice, itemInCartPrice);
-
+            cart.AssertItemNameAndItemInCartName(itemFromListName);
+            cart.AssertItemPriceAndItemInCartPrice(itemFromListPrice);
 
             cart.RemoveItemFromCart();
             Thread.Sleep(2000);
-            kikaHomePage.Header.ProfileMenuDisplay();
+            kikaHomePage.Header.ClickOnProfileMenuIcon();
             kikaHomePage.Header.LogOut();
 
             Thread.Sleep(3000);

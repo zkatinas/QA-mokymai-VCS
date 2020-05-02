@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
+using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -43,9 +44,28 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void Login (string email, string password)
         {
-            EnterEmail(email);
-            EnterPassword(password);
+            EnterEmail(email);            
+            EnterPassword(password);           
             ClickLoginFormButton();
+
+            //bool noElement = true;
+            //while (noElement)
+            //{                
+            //    try
+            //    {
+            //        Thread.Sleep(50);
+            //        EnterEmail(email);
+            //        Thread.Sleep(50);
+            //        EnterPassword(password);
+            //        Thread.Sleep(50);
+            //        ClickLoginFormButton();
+            //        noElement = false;
+            //    }
+            //    catch (WebDriverException)
+            //    {
+            //        noElement = true;
+            //    }
+            //}
         }
         
 

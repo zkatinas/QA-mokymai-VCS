@@ -14,6 +14,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         public static Item Item => new Item();
         public static KikaHomePage KikaHomePage => new KikaHomePage();
         public static SearchPage SearchPage => new SearchPage();
+        public static ItemListing ItemListing => new ItemListing();
 
     }
 }
