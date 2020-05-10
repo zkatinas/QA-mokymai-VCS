@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
+using System.Linq.Expressions;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
@@ -12,7 +13,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         private IWebDriver driver => Driver.Current;
 
         private const string LoginFormId = "login_form";
-        private IWebElement elementEmailInput => driver.FindElement(By.CssSelector($"#{LoginFormId} [name='email']"));
+        private IWebElement elementEmailInput => driver.FindElement(By.CssSelector($"#dynamicModal #{LoginFormId} [name='email']"));
         private IWebElement elementPasswordInput => driver.FindElement(By.CssSelector($"#{LoginFormId} [name='password']"));
         private IWebElement elementLoginButton => driver.FindElement(By.CssSelector($"#{LoginFormId} .btn-primary"));
         private By elementLoginErrorMessageSelector = By.CssSelector("#customers_login .alert-dismissible");
@@ -44,26 +45,42 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void Login (string email, string password)
         {
-            EnterEmail(email);            
-            EnterPassword(password);           
+            EnterEmail(email);
+            EnterPassword(password);
             ClickLoginFormButton();
 
             //bool noElement = true;
             //while (noElement)
-            //{                
+            //{
             //    try
-            //    {
-            //        Thread.Sleep(50);
-            //        EnterEmail(email);
-            //        Thread.Sleep(50);
+            //    {                    
+            //        EnterEmail(email);                    
             //        EnterPassword(password);
-            //        Thread.Sleep(50);
             //        ClickLoginFormButton();
             //        noElement = false;
             //    }
             //    catch (WebDriverException)
             //    {
             //        noElement = true;
+            //    }
+            //}
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    try
+            //    {
+            //        WebDriverWait wait = new WebDriverWait(Driver.Current, System.TimeSpan.FromSeconds(5));
+            //        wait.Until(d => elementEmailInput);
+            //        EnterEmail(email);
+            //        EnterPassword(password);
+            //        ClickLoginFormButton();
+            //        break;
+            //    }
+            //    catch (NoSuchElementException)
+            //    {                    
+            //    }
+            //    catch(ElementNotInteractableException)
+            //    {
             //    }
             //}
         }

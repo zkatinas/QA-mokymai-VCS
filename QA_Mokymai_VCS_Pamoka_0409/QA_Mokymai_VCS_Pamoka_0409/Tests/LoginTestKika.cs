@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Threading;
@@ -10,16 +11,14 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         
         [Test]
         public void TestLogin()
-        {
-            WebDriverWait wait = new WebDriverWait(Driver.Current, System.TimeSpan.FromSeconds(5));
-            Thread.Sleep(2000);                    
+        {            
             popUpModal.ClosePopUpModal();                                   
             kikaHomePage.Header.ClickLoginIconButton();
-
-            Thread.Sleep(1500);                      
-            loginModal.EnterEmail("testeris888@test.lt");          
-            loginModal.EnterPassword("testeris888");           
+            Thread.Sleep(1500);
+            loginModal.EnterEmail("testeris888@test.lt");
+            loginModal.EnterPassword("testeris888");
             loginModal.ClickLoginFormButton();
+            //LoginWithtUser("testeris888@test.lt", "testeris888");
 
             // Galima naudoti bendra metoda
             //loginModal.Login("testeris888@test.lt", "testeris888");
@@ -27,13 +26,10 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             //Galima naudoti "chain"
             //loginModal.EnterEmail("testeris888@test.lt").EnterEmail("testeris888").ClickLoginFormButton();  
 
-            Thread.Sleep(2000);            
 
-            //Patikrinti, ar prisijunges
-            //string userLogged = driver.FindElement(By.CssSelector("#profile_menu.dropdown .dropdown-menu[style*='display: block;'] a[href='https://www.kika.lt/paskyra/uzsakymai/']")).Text;
-            //string manoUzsakymai = "Mano užsakymai";
-            //Assert.AreEqual(userLogged, manoUzsakymai);
-            //Thread.Sleep(2000);
+            //Patikrinti, ar prisijunges              
+            kikaHomePage.Header.CheckIfUserIsLogged();
+            Thread.Sleep(2000);
         }
 
     }

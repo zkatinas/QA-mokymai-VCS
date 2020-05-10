@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
+using System;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -16,6 +17,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         private IWebElement elementCart => driver.FindElement(By.Id("cart_info"));
 
         private IWebElement elementProfileMenuButton => driver.FindElement(By.CssSelector("#profile_menu .ico.ico-profile"));
+        private By elementWishlistCountSelector = By.CssSelector("#wishlist_info .cnt");
+        private IWebElement elementWishlistCount => driver.FindElement(elementWishlistCountSelector);
         private By elementLogOutSelector = By.CssSelector("#profile_menu a[href='?logout']");
         private IWebElement elementLogOut => driver.FindElement(elementLogOutSelector);
 
@@ -62,6 +65,15 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         public void ClickOnProfileMenuIcon()
         {
             elementProfileMenuButton.Click();
+        }
+
+        public void CheckIfUserIsLogged()
+        {
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementWishlistCountSelector));
+            //Assert.AreEqual(loggedUserProfileElement, elementWishlistCount);
+            Assert.IsTrue(elementWishlistCount.Text != null, "Wishlist is not visible");
+            Console.WriteLine(elementWishlistCount.Text);
         }
 
         public void LogOut()
