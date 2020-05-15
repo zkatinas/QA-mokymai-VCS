@@ -13,10 +13,10 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
     {
         public static void TakeScreenshot()
         {
-            Screenshot screenshot = Driver.Current.TakeScreenshot();
+            Screenshot screenshot = ((ITakesScreenshot)Driver.Current).GetScreenshot();
             string screenshotPath = $"{TestContext.CurrentContext.WorkDirectory}/Screenshots";
             Directory.CreateDirectory(screenshotPath);
-            string screenshotFile = Path.Combine(screenshotPath, $"{TestContext.CurrentContext.Test.Name}_{DateAndTime.Now.ToString("yy-MM-dd HH:mm:ss")}.png");
+            string screenshotFile = Path.Combine(screenshotPath, $"{TestContext.CurrentContext.Test.Name}_{DateAndTime.Now.ToString("yy-MM-dd_HH_mm_ss")}.png");
 
             screenshot.SaveAsFile(screenshotFile, ScreenshotImageFormat.Png);
             Console.WriteLine("screenshot: file://" + screenshotFile);

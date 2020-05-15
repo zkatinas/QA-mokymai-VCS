@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WedurORqCooSH/LUu8kaG7CTVaq8GTfipsMu8MzZ1N9J7Cxg0daZ1scLZCXwdi+8YYc4IAawcDzJShrtCqX26w==",
+  "dgSpecHash": "vX0n4CUB3UyXXqaS3l0bYj17O8eahpuLefawNkDYFtwFRZHKMaODa6MnS/3HM9Dtv6pCfDI9L5jni/JFgLl51w==",
   "success": true,
   "projectFilePath": "C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
-    "C:\\Users\\zkatinas\\.nuget\\packages\\selenium.webdriver.chromedriver\\81.0.4044.6900\\selenium.webdriver.chromedriver.81.0.4044.6900.nupkg.sha512",
+    "C:\\Users\\zkatinas\\.nuget\\packages\\selenium.webdriver.chromedriver\\81.0.4044.13800\\selenium.webdriver.chromedriver.81.0.4044.13800.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\selenium.webdriver.geckodriver\\0.26.0.1\\selenium.webdriver.geckodriver.0.26.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

@@ -2,7 +2,9 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Remote;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Utils
 {
@@ -21,6 +23,13 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
                     options.AddArguments("incognito");
                     driver = new ChromeDriver(options);
                     break;
+                case Browser.ChromeRemote:
+                    var options2 = new ChromeOptions();
+                    options2.AddArgument("incognito");
+                    options2.PlatformName = "Windows 10";
+                   /* options2.BrowserVersion = "81"*/;
+                    driver = new RemoteWebDriver(new Uri("http://192.168.1.177:4444/wd/hub"), options2.ToCapabilities());
+                    break;
                 case Browser.Firefox:
                     driver = new FirefoxDriver();
                     break;
@@ -30,7 +39,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
             }                
             
             driver.Manage().Window.Maximize();
-            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);            
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);            
         }
 
         public static void Quit()
@@ -61,6 +70,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
     public enum Browser
     {
         Chrome,
-        Firefox
+        Firefox,
+        ChromeRemote
     }
 }

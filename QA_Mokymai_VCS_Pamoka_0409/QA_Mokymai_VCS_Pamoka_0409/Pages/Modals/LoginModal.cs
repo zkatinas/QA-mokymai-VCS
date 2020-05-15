@@ -9,11 +9,12 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
     public class LoginModal
     {
-        // Jei daug pakeitimu, tai parasom get'eri.
+        // Jei daug pakeitimu, tai parasom get'eri.$"#dynamicModal #{LoginFormId} [name='email']"
         private IWebDriver driver => Driver.Current;
 
         private const string LoginFormId = "login_form";
-        private IWebElement elementEmailInput => driver.FindElement(By.CssSelector($"#dynamicModal #{LoginFormId} [name='email']"));
+        //Su modal reikalingos klases "fade" ir in" - jos reiksi, kad elementas matomas
+        private IWebElement elementEmailInput => driver.FindElement(By.CssSelector($"#dynamicModal.fade.in #{LoginFormId} [name='email']"));
         private IWebElement elementPasswordInput => driver.FindElement(By.CssSelector($"#{LoginFormId} [name='password']"));
         private IWebElement elementLoginButton => driver.FindElement(By.CssSelector($"#{LoginFormId} .btn-primary"));
         private By elementLoginErrorMessageSelector = By.CssSelector("#customers_login .alert-dismissible");

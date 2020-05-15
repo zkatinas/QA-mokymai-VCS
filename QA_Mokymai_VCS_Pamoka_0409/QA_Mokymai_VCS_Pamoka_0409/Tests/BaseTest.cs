@@ -61,11 +61,16 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 
         protected void MakeScreenshotOnTestFailure()
         {
-            if (TestContext.CurrentContext.Result.Outcome.Status != TestStatus.Passed)
+            try
             {
-                ScreenshotMaker.TakeScreenshot();
+                if (TestContext.CurrentContext.Result.Outcome.Status != TestStatus.Passed)
+                {
+                    ScreenshotMaker.TakeScreenshot();
+                }
+            }
+            catch (WebDriverException)
+            {
             }
         }       
-
     }
 }
