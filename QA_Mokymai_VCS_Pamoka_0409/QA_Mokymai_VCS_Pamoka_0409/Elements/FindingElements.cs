@@ -255,12 +255,99 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Elements
             var e37 = elementGooglePlayStore.TagName;
             Console.WriteLine($"The tag name of the element is: {e37}");
 
-            //Kaip parinkti masina zemelapyje?
+            //Kaip parinkti masina zemelapyje - e38?
             //$$(".map-popup__container .c-cell__text")
 
             Thread.Sleep(2000);
         }
 
+        [Test]
+        public void FindElementsWolt()
+        {
+            Driver.Current.Url = "https://wolt.com/lt/";
+            var elementEnterDestinationAddress = Driver.Current.FindElement(By.Id("front-page-input"));
+            var e39 = elementEnterDestinationAddress.TagName;
+            Console.WriteLine($"The tag name of the element is: {e39}");
+
+            var elementSearchAddressButton = Driver.Current.FindElement(By.CssSelector(".AddressPickerInput__button___N88Lx"));
+            var e40 = elementSearchAddressButton.TagName;
+            Console.WriteLine($"The tag name of the element is: {e40}");
+
+            elementEnterDestinationAddress.Click();
+            var elementUseMyCurrentLocation = Driver.Current.FindElement(By.CssSelector(".FrontPageLocationSelector__locationResultContainer___28SPi"));
+            var e41 = elementUseMyCurrentLocation.TagName;
+            Console.WriteLine($"The tag name of the element is: {e41}");
+
+            Driver.Current.Url = "https://wolt.com/lt/ltu/vilnius";
+            var elementTopMenuSearchInput = Driver.Current.FindElement(By.Id("SearchInputAnimated-input-id"));
+            var e42 = elementTopMenuSearchInput.TagName;
+            Console.WriteLine($"The tag name of the element is: {e42}");
+
+            var elementLoginButton = Driver.Current.FindElement(By.CssSelector("[data-test-id='UserStatus.Login']"));
+            var e43 = elementLoginButton.Text;
+            Console.WriteLine($"The text of the element is: {e43}");
+
+            var elementDeliveryButton = Driver.Current.FindElement(By.CssSelector(".SubNavigation__items___tyoR8 [href='/lt/delivers-to-me']"));
+            var e44 = elementDeliveryButton.Text;
+            Console.WriteLine($"The text of the element is: {e44}");
+
+            var elementActiveHeroCarouselBullet = Driver.Current.FindElement(By.CssSelector(".HeroCarousel__textArea___3tJp0 .HeroCarousel__bullet___212dm.HeroCarousel__bulletActive___3hSZN"));
+            var e45 = elementActiveHeroCarouselBullet.TagName;
+            Console.WriteLine($"The tag name of the element is: {e45}");
+
+            var elementHeroCarouselArrowRightButton = Driver.Current.FindElement(By.CssSelector(".HeroCarousel__prevNextButton___3ckf2 .HeroCarousel__hideOnHover___2qIUK[style='transform: rotate(180deg);']"));
+            var e46 = elementHeroCarouselArrowRightButton.TagName;
+            Console.WriteLine($"The tag name of the element is: {e46}");
+
+            //47th element
+            var elementBannerCarouselArrowLeftButton = Driver.Current.FindElement(By.CssSelector(".BannerCarousel__prevNextButton___14QUd .ic_keyboard_arrow_left:not([style='transform: rotate(180deg);'])"));
+            elementBannerCarouselArrowLeftButton.Click();
+
+            var elementShopTitleInBannerCarouselList = Driver.Current.FindElements(By.CssSelector(".BannerCarousel__cardContainer___2Wc9c .VenueBanner__title___10bFq"));
+            var elementShopTitleInBannerCarousel = elementShopTitleInBannerCarouselList[1];
+            var e48 = elementShopTitleInBannerCarousel.Text;
+            Console.WriteLine($"The text of the element is: {e48}");
+
+            var elementShopDescriptionInBannerCarouselList = Driver.Current.FindElements(By.CssSelector(".BannerCarousel__cardContainer___2Wc9c .VenueBanner__bottomRow___10xqW"));
+            var elementShopDescriptionInBannerCarousel = elementShopDescriptionInBannerCarouselList[2];
+            var e49 = elementShopDescriptionInBannerCarousel.Text;
+            Console.WriteLine($"The text of the element is: {e49}");
+
+
+            Thread.Sleep(2000);
+        }
+
+        [Test]
+        public void FindElementsStrava()
+        {
+            Driver.Current.Url = "https://www.strava.com/";
+            var elementLoginButton = Driver.Current.FindElement(By.CssSelector(".header [href='/login']"));
+            var e50 = elementLoginButton.Text;
+            Console.WriteLine($"The text of the element is: {e50}");
+
+            var elementSignUpWithFacebook = Driver.Current.FindElement(By.CssSelector(".signup-form .facebook-signup-button"));
+            var e51 = elementSignUpWithFacebook.Text;
+            Console.WriteLine($"The text of the element is: {e51}");
+
+            var elementSignUpWithGoogle = Driver.Current.FindElement(By.CssSelector(".signup-form .google-signup-button"));
+            var e52 = elementSignUpWithGoogle.Text;
+            Console.WriteLine($"The text of the element is: {e52}");
+
+            var elementSignUpWithApple = Driver.Current.FindElement(By.Id("apple-signin"));
+            var e53 = elementSignUpWithApple.Text;
+            Console.WriteLine($"The text of the element is: {e53}");
+
+            var elementSignUpWithMyEmail = Driver.Current.FindElement(By.CssSelector(".signup-form .email-signup-button"));
+            var e54 = elementSignUpWithMyEmail.Text;
+            Console.WriteLine($"The text of the element is: {e54}");
+
+            var elementCenterLogInButton = Driver.Current.FindElement(By.CssSelector(".disclaimer-text [href='/login']"));
+            var e55 = elementCenterLogInButton.Text;
+            Console.WriteLine($"The text of the element is: {e55}");
+
+
+            Thread.Sleep(2000);
+        }
 
         [TearDown]
         public void TearDown()
