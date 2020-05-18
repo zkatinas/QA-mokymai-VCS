@@ -1,11 +1,12 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using QA_Mokymai_Second_Project_SkyCop.Pages;
 using QA_Mokymai_Second_Project_SkyCop.Utilities;
+
 
 namespace QA_Mokymai_Second_Project_SkyCop
 {
     [Parallelizable]
-    public class Tests
+    public class UnitTest2
     {
         public Homepage homePage;
 
@@ -18,11 +19,11 @@ namespace QA_Mokymai_Second_Project_SkyCop
         }
 
         [Test]
-        public void CompleteFlightItineraryInfo()
+        public void CompleteFlightItineraryInfo2()
         {
             homePage.ClickClaimButton().
-                EnterDepartedFrom("viln").
-                EnterDestination("kaun").
+                EnterDepartedFrom("kaun").
+                EnterDestination("viln").
                 ClickContinueButton().
                 VerifyPageTitle();
         }

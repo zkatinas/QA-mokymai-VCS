@@ -6,6 +6,7 @@ using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [Parallelizable]
     public class LoginBadUserKika : BaseTest
     {
 

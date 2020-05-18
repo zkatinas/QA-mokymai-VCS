@@ -4,17 +4,22 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
 using System;
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Concurrent;
+using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Utils
 {
     public class Driver
     {
-        private static IWebDriver driver;
-        public static IWebDriver Current => driver;      
+        // ConcurrentDictionary - reikalingas paraleliniam testu paleidimui; saugus "multithread"
+        private static ConcurrentDictionary<int,IWebDriver> driverList = new ConcurrentDictionary<int,IWebDriver>();
+
+        //Thread.CurrentThread.ManagedThreadId = gauname dabartini thread
+        public static IWebDriver Current => driverList[Thread.CurrentThread.ManagedThreadId];      
         
         public static void Init()
         {
+            IWebDriver driver = null;
             switch (EnvironmentManager.browser)
             {
                 case Browser.Chrome:
@@ -36,10 +41,10 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
                 default:
                     Assert.Fail("Driver not supported!");
                     break;
-            }                
-            
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);            
+            }
+            driverList[Thread.CurrentThread.ManagedThreadId] = driver;
+            Current.Manage().Window.Maximize();
+            Current.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);            
         }
 
         public static void Quit()

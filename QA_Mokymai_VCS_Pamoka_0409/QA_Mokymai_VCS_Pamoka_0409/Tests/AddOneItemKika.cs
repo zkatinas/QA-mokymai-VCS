@@ -3,9 +3,9 @@ using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [Parallelizable]
     public class AddOneItemKika : BaseTest
     {
-        
         [SetUp]
         public void Before()
         {

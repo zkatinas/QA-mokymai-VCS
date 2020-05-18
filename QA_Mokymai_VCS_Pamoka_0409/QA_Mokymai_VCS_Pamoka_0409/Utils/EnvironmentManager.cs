@@ -6,7 +6,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
     public class EnvironmentManager
     {
         //public static Browser browser => Browser.ChromeRemote;
-        public static Browser browser => Browser.Chrome;
+        public static Browser browser => Browser.ChromeRemote;
 
     }
 }

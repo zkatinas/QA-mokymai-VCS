@@ -4,11 +4,13 @@ using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [Parallelizable]
     public class SearchTests : BaseTest
     {
         [SetUp]
         public void Before()
-        {           
+        {
+            popUpModal.ClosePopUpModal();
             kikaHomePage.Login(User.DefaultKikaUser);
         }
 
