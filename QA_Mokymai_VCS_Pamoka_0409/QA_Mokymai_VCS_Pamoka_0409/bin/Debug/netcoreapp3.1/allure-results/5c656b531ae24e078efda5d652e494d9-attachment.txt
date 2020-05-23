@@ -1,0 +1,1 @@
+screenshot: file://C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\bin\Debug\netcoreapp3.1/Screenshots\TestLogin_20-05-22_17_20_46.png

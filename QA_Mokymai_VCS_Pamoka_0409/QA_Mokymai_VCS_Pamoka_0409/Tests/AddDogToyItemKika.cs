@@ -1,9 +1,11 @@
-﻿using NUnit.Framework;
+﻿using NUnit.Allure.Core;
+using NUnit.Framework;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [AllureNUnit]
     [Parallelizable]
     public class AddDogToyItemKika : BaseTest
     {
@@ -21,7 +23,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         public void AddFirstDogToyItem()
         {
 
-            Thread.Sleep(2000);
+            //Thread.Sleep(2000);
+            Waits.WaitUntilModalBackgroundIsNotVisible();
             kikaHomePage.Header.AssertCartIconNumber("0");
             pageMenuSection.NavigateToDogToyList();
 
@@ -44,7 +47,6 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             // Perkraunam puslapi
             Driver.RefreshPage();
             kikaHomePage.Header.AssertCartIconNumber("0");
-
             kikaHomePage.Header.ClickOnProfileMenuIcon();
             kikaHomePage.Header.LogOut();  
 

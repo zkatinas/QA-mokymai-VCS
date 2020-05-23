@@ -1,12 +1,11 @@
-﻿using Microsoft.VisualBasic;
+﻿using Allure.Commons;
+using NUnit.Allure.Core;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.Extensions;
 using QA_Mokymai_VCS_Pamoka_0409.Pages;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
-using System;
-using System.IO;
+
 
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
@@ -53,19 +52,25 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         //}
 
         protected void LoginWithtUser(string username, string password)
-        {
-            
+        {            
             kikaHomePage.loginModal.Login(username, password);
         }
 
 
+        
         protected void MakeScreenshotOnTestFailure()
         {
             try
             {
                 if (TestContext.CurrentContext.Result.Outcome.Status != TestStatus.Passed)
                 {
-                    ScreenshotMaker.TakeScreenshot();
+                    AllureLifecycle.Instance.WrapInStep(() =>
+                    { 
+                        var screenshots = ScreenshotMaker.TakeScreenshot();
+                        AllureLifecycle.Instance.AddAttachment("Failed Screenshot", "image/png", screenshots, "png");
+                   
+                    }, "Failed test screenshot");
+                    
                 }
             }
             catch (WebDriverException)

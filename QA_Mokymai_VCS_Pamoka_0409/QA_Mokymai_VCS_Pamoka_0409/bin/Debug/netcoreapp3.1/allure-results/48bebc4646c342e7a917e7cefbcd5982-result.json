@@ -1,0 +1,63 @@
+{
+  "uuid": "27938822-570c-43f9-947c-9b58a9a8448a-tr-0-1007",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestLogin"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika"
+    }
+  ],
+  "links": [],
+  "name": "TestLogin",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TestLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a32c0eee80d347d692f37bc634835624-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590157191881,
+      "stop": 1590157213843
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590157191879,
+  "stop": 1590157213851
+}

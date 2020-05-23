@@ -1,0 +1,44 @@
+{
+  "uuid": "49659b6e-7a04-441c-bfff-9a72eb11a37c-tc-0-1006",
+  "name": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "children": [
+    "f7f91584-b9a9-4b4d-8945-844609493132-tr-0-1007"
+  ],
+  "befores": [
+    {
+      "name": "BaseBeforeTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590212154082,
+      "stop": 1590212154082
+    }
+  ],
+  "afters": [
+    {
+      "name": "QuitDriver",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590212154083,
+      "stop": 1590212154083
+    }
+  ],
+  "links": [],
+  "start": 1590212137869,
+  "stop": 1590212154139
+}

@@ -1,0 +1,104 @@
+{
+  "uuid": "e7bf2a30-a5c7-4192-a943-0ad98ae6d747-tr-0-1003",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddFirstFoodInList"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    }
+  ],
+  "links": [],
+  "name": "AddFirstFoodInList",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  String lengths are both 1. Strings differ at index 0.\r\n  Expected: \"1\"\r\n  But was:  \"0\"\r\n  -----------^\r\n",
+    "trace": "   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.AssertCartIconNumber(String itemNumber) in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 55\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\AddOneItemKika.cs:line 43\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddFirstFoodInList",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  String lengths are both 1. Strings differ at index 0.\r\n  Expected: \"1\"\r\n  But was:  \"0\"\r\n  -----------^\r\n",
+        "trace": "   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.AssertCartIconNumber(String itemNumber) in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 55\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\AddOneItemKika.cs:line 43\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590214612812,
+          "stop": 1590214615218
+        },
+        {
+          "name": "Failed test screenshot",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Failed Screenshot",
+              "source": "ffc73ad1811a46b4b3ffcebd43433589-attachmentpng",
+              "type": "image/png"
+            }
+          ],
+          "parameters": [],
+          "start": 1590214631645,
+          "stop": 1590214632096
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "de51f55caee144c0a50f6bd9bd2961a4-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590214603622,
+      "stop": 1590214632509
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590214603621,
+  "stop": 1590214632514
+}

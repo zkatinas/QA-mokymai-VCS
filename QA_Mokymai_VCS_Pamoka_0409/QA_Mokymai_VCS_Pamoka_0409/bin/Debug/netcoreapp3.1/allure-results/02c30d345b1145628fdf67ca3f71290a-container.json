@@ -1,0 +1,48 @@
+{
+  "uuid": "d907f16b-1d79-46d7-ae69-db6bc0f1441b-tc-0-1006",
+  "name": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "children": [
+    "492731a3-cdb1-4d98-b235-8460e1a52bab-tr-0-1007"
+  ],
+  "befores": [
+    {
+      "name": "BaseBeforeTest",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 81 (SessionNotCreated)\r\nTearDown : System.Collections.Generic.KeyNotFoundException : The given key '21' was not present in the dictionary.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.Init() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 29\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.BaseBeforeTest() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 29\r\n--TearDown\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(Object key)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.get_Current() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 18\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.ScreenshotMaker.TakeScreenshot() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Screenshot.cs:line 16\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.MakeScreenshotOnTestFailure() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 68\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.QuitDriver() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 39"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590154646293,
+      "stop": 1590154646293
+    }
+  ],
+  "afters": [
+    {
+      "name": "QuitDriver",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 81 (SessionNotCreated)\r\nTearDown : System.Collections.Generic.KeyNotFoundException : The given key '21' was not present in the dictionary.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.Init() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 29\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.BaseBeforeTest() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 29\r\n--TearDown\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(Object key)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.get_Current() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 18\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.ScreenshotMaker.TakeScreenshot() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Screenshot.cs:line 16\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.MakeScreenshotOnTestFailure() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 68\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.QuitDriver() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 39"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590154646295,
+      "stop": 1590154646295
+    }
+  ],
+  "links": [],
+  "start": 1590154644393,
+  "stop": 1590154646393
+}

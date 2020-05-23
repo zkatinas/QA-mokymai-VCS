@@ -1,11 +1,10 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using QA_Mokymai_VCS_Pamoka_0409.Utils;
+﻿using NUnit.Allure.Core;
+using NUnit.Framework;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [AllureNUnit]    
     [Parallelizable]
     public class LoginTestKika : BaseTest
     {
@@ -14,7 +13,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         {            
             popUpModal.ClosePopUpModal();                                   
             kikaHomePage.Header.ClickLoginIconButton();
-            //Thread.Sleep(1500);
+            Thread.Sleep(1500);
             loginModal.EnterEmail("testeris888@test.lt");
             loginModal.EnterPassword("testeris888");
             loginModal.ClickLoginFormButton();

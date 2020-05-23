@@ -1,0 +1,104 @@
+{
+  "uuid": "87781947-4e5e-411f-8894-ec92da6d1d74-tr-0-1003",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddFirstFoodInList"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    }
+  ],
+  "links": [],
+  "name": "AddFirstFoodInList",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i class=\"ico ico-profile\"></i> is not clickable at point (1229, 52). Other element would receive the click: <div id=\"ajax_loader\" style=\"display: block;\"></div>\n  (Session info: chrome=83.0.4103.61)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.ClickOnProfileMenuIcon() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 65\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\AddOneItemKika.cs:line 50"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddFirstFoodInList",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <i class=\"ico ico-profile\"></i> is not clickable at point (1229, 52). Other element would receive the click: <div id=\"ajax_loader\" style=\"display: block;\"></div>\n  (Session info: chrome=83.0.4103.61)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.ClickOnProfileMenuIcon() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 65\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\AddOneItemKika.cs:line 50"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590216748793,
+          "stop": 1590216751046
+        },
+        {
+          "name": "Failed test screenshot",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Failed Screenshot",
+              "source": "30a8eb32c91e43a3ad1ee55bff4cba57-attachmentpng",
+              "type": "image/png"
+            }
+          ],
+          "parameters": [],
+          "start": 1590216766558,
+          "stop": 1590216767027
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "752a42bb82dd4dddb570349761e9946d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590216741248,
+      "stop": 1590216767440
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590216741247,
+  "stop": 1590216767449
+}

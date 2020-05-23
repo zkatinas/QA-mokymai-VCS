@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -55,9 +56,11 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void AssertIfCartIsEmpty(string expectedMessage)
         {
+            Driver.TurnOffImplicitWait();
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(emptyCartMessageSelector));
             Assert.AreEqual(expectedMessage, emptyCartMessage.Text);
+            Driver.TurnOnImplicitWait();
         }
 
         public void RemoveItemFromCart()

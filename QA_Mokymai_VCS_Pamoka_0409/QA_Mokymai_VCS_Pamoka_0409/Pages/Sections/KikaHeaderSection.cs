@@ -12,11 +12,12 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         private By elementLoginIconButtonSelector = By.CssSelector("#profile_menu .need2login");
         private IWebElement elementLoginIconButton => driver.FindElement(elementLoginIconButtonSelector);
-        IWebElement elementSearchIcon => driver.FindElement(By.Id("quick_search_show"));
-        private string itemCountInCart => driver.FindElement(By.CssSelector("#cart_info em.cnt")).Text;
+        private IWebElement elementSearchIcon => driver.FindElement(By.Id("quick_search_show"));
+        private IWebElement itemCountInCart => driver.FindElement(By.CssSelector("#cart_info em.cnt"));
         private IWebElement elementCart => driver.FindElement(By.Id("cart_info"));
 
-        private IWebElement elementProfileMenuButton => driver.FindElement(By.CssSelector("#profile_menu .ico.ico-profile"));
+        private By elementProfileMenuButtonSelector = By.CssSelector("#profile_menu .ico-profile");
+        private IWebElement elementProfileMenuButton => driver.FindElement(elementProfileMenuButtonSelector);
         private By elementWishlistCountSelector = By.CssSelector("#wishlist_info .cnt");
         private IWebElement elementWishlistCount => driver.FindElement(elementWishlistCountSelector);
         private By elementLogOutSelector = By.CssSelector("#profile_menu a[href='?logout']");
@@ -25,25 +26,23 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void ClickLoginIconButton()
         {
-            // Try catch ?? Nes interceptina click'a.
-            for (int i = 0; i < 4; i++)
-            {
-                try
-                {
-                    elementLoginIconButton.Click();
-                    break;
-                }
-                catch (ElementClickInterceptedException)
-                {
-                    continue;
-                }
+            Waits.WaitUntilModalBackgroundIsNotVisible();
+            elementLoginIconButton.Click();
 
-            }
-            
-            
-            //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLoginIconButtonSelector));
-            //elementLoginIconButton.Click();
+            // Try catch ?? Nes interceptina click'a.
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    try
+            //    {
+            //        elementLoginIconButton.Click();
+            //        break;
+            //    }
+            //    catch (ElementClickInterceptedException)
+            //    {
+            //        continue;
+            //    }
+
+            //}           
         }
 
         public SearchPage ClickOnSearchIcon()
@@ -54,7 +53,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void AssertCartIconNumber(string itemNumber)
         {
-            Assert.AreEqual(itemNumber, itemCountInCart);
+            Assert.AreEqual(itemNumber, itemCountInCart.Text);
         }
 
         public void ClickOnCartIcon()
@@ -64,23 +63,31 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void ClickOnProfileMenuIcon()
         {
+            //Driver.TurnOffImplicitWait();
+            //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+            //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementProfileMenuButtonSelector));
             elementProfileMenuButton.Click();
+            //Driver.TurnOnImplicitWait();
         }
 
         public void CheckIfUserIsLogged()
         {
+            Driver.TurnOffImplicitWait();
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementWishlistCountSelector));
             //Assert.AreEqual(loggedUserProfileElement, elementWishlistCount);
             Assert.IsTrue(elementWishlistCount.Text != null, "Wishlist is not visible");
             Console.WriteLine(elementWishlistCount.Text);
+            Driver.TurnOnImplicitWait();
         }
 
         public void LogOut()
         {
+            Driver.TurnOffImplicitWait();
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLogOutSelector));
             elementLogOut.Click();
+            Driver.TurnOnImplicitWait();
         }
     }
 }

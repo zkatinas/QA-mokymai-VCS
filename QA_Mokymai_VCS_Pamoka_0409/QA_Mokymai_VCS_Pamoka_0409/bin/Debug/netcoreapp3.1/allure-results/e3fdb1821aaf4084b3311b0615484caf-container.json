@@ -1,0 +1,48 @@
+{
+  "uuid": "c9fe2f0a-5c94-45a5-a73a-9dc10dc1f589-tc-0-1006",
+  "name": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "children": [
+    "d91d3259-3a0e-4dd5-a1cc-38db63a5aafe-tr-0-1007"
+  ],
+  "befores": [
+    {
+      "name": "BaseBeforeTest",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 81\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'ZKATINAS', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'\nDriver info: driver.version: unknown\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x005E5E93+2449043]\n\tOrdinal0 [0x00518281+1606273]\n\tOrdinal0 [0x0040F889+522377]\n\tOrdinal0 [0x003A05F3+67059]\n\tOrdinal0 [0x0039CD92+52626]\n\tOrdinal0 [0x003BC127+180519]\n\tOrdinal0 [0x003BBF2D+180013]\n\tOrdinal0 [0x003B9E5B+171611]\n\tOrdinal0 [0x003A1DD8+73176]\n\tOrdinal0 [0x003A2E50+77392]\n\tOrdinal0 [0x003A2DE9+77289]\n\tOrdinal0 [0x0052D7F7+1693687]\n\tGetHandleVerifier [0x00684576+522742]\n\tGetHandleVerifier [0x006842B4+522036]\n\tGetHandleVerifier [0x00699587+608775]\n\tGetHandleVerifier [0x00684DE6+524902]\n\tOrdinal0 [0x00525BDC+1661916]\n\tOrdinal0 [0x0052F15B+1700187]\n\tOrdinal0 [0x0052F2C3+1700547]\n\tOrdinal0 [0x00545135+1790261]\n\tBaseThreadInitThunk [0x74876359+25]\n\tRtlGetAppContainerNamedObjectPath [0x77007C24+228]\n\tRtlGetAppContainerNamedObjectPath [0x77007BF4+180]\n (SessionNotCreated)\r\nTearDown : System.Collections.Generic.KeyNotFoundException : The given key '20' was not present in the dictionary.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.Init() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 36\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.BaseBeforeTest() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 29\r\n--TearDown\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(Object key)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.get_Current() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 18\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.ScreenshotMaker.TakeScreenshot() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Screenshot.cs:line 16\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.MakeScreenshotOnTestFailure() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 68\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.QuitDriver() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 39"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590155175330,
+      "stop": 1590155175330
+    }
+  ],
+  "afters": [
+    {
+      "name": "QuitDriver",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 81\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'ZKATINAS', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'\nDriver info: driver.version: unknown\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x005E5E93+2449043]\n\tOrdinal0 [0x00518281+1606273]\n\tOrdinal0 [0x0040F889+522377]\n\tOrdinal0 [0x003A05F3+67059]\n\tOrdinal0 [0x0039CD92+52626]\n\tOrdinal0 [0x003BC127+180519]\n\tOrdinal0 [0x003BBF2D+180013]\n\tOrdinal0 [0x003B9E5B+171611]\n\tOrdinal0 [0x003A1DD8+73176]\n\tOrdinal0 [0x003A2E50+77392]\n\tOrdinal0 [0x003A2DE9+77289]\n\tOrdinal0 [0x0052D7F7+1693687]\n\tGetHandleVerifier [0x00684576+522742]\n\tGetHandleVerifier [0x006842B4+522036]\n\tGetHandleVerifier [0x00699587+608775]\n\tGetHandleVerifier [0x00684DE6+524902]\n\tOrdinal0 [0x00525BDC+1661916]\n\tOrdinal0 [0x0052F15B+1700187]\n\tOrdinal0 [0x0052F2C3+1700547]\n\tOrdinal0 [0x00545135+1790261]\n\tBaseThreadInitThunk [0x74876359+25]\n\tRtlGetAppContainerNamedObjectPath [0x77007C24+228]\n\tRtlGetAppContainerNamedObjectPath [0x77007BF4+180]\n (SessionNotCreated)\r\nTearDown : System.Collections.Generic.KeyNotFoundException : The given key '20' was not present in the dictionary.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.Init() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 36\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.BaseBeforeTest() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 29\r\n--TearDown\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(Object key)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.get_Current() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 18\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.ScreenshotMaker.TakeScreenshot() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Screenshot.cs:line 16\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.MakeScreenshotOnTestFailure() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 68\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.QuitDriver() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 39"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590155175332,
+      "stop": 1590155175332
+    }
+  ],
+  "links": [],
+  "start": 1590155173047,
+  "stop": 1590155175404
+}

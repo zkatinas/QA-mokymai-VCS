@@ -1,0 +1,79 @@
+{
+  "uuid": "a3e82aad-52be-4ecf-bdc9-53fb9ebb1e1b-tr-0-1001",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddDogToyItemKika.AddFirstDogToyItem",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddDogToyItemKika.AddFirstDogToyItem",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddDogToyItemKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddFirstDogToyItem"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddDogToyItemKika"
+    }
+  ],
+  "links": [],
+  "name": "AddFirstDogToyItem",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddFirstDogToyItem",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590216135475,
+          "stop": 1590216137704
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "56d1cd6de5034aaca4db65e4703a04d3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590216127421,
+      "stop": 1590216160498
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590216127420,
+  "stop": 1590216160510
+}

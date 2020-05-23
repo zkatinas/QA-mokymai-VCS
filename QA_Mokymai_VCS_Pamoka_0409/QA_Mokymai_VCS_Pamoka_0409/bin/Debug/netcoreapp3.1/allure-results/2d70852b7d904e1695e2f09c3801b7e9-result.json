@@ -1,0 +1,68 @@
+{
+  "uuid": "a7d10bc6-a94e-4bbb-8e57-550cad4f19ce-tr-0-1007",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestLogin"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika"
+    }
+  ],
+  "links": [],
+  "name": "TestLogin",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 81 (SessionNotCreated)\r\nTearDown : System.Collections.Generic.KeyNotFoundException : The given key '21' was not present in the dictionary.",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.Init() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 29\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.BaseBeforeTest() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 29\r\n--TearDown\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(Object key)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.get_Current() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 18\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.ScreenshotMaker.TakeScreenshot() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Screenshot.cs:line 16\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.MakeScreenshotOnTestFailure() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 68\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.QuitDriver() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 39"
+  },
+  "stage": "finished",
+  "description": "\nBaseBeforeTest SetUp method failed\n\nQuitDriver TearDown method failed\n",
+  "steps": [
+    {
+      "name": "TestLogin skipped because of BaseBeforeTest failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.InvalidOperationException : session not created: This version of ChromeDriver only supports Chrome version 81 (SessionNotCreated)\r\nTearDown : System.Collections.Generic.KeyNotFoundException : The given key '21' was not present in the dictionary.",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout)\r\n   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.Init() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 29\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.BaseBeforeTest() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 29\r\n--TearDown\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(Object key)\r\n   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.Driver.get_Current() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Driver.cs:line 18\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.ScreenshotMaker.TakeScreenshot() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Screenshot.cs:line 16\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.MakeScreenshotOnTestFailure() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 68\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.QuitDriver() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 39"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "be5bc33157504163836387a2057a3d98-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590154458985,
+      "stop": 1590154461884
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590154458984,
+  "stop": 1590154461898
+}

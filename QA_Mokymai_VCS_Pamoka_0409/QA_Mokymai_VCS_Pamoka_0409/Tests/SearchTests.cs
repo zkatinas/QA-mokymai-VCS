@@ -1,9 +1,11 @@
-﻿using NUnit.Framework;
+﻿using NUnit.Allure.Core;
+using NUnit.Framework;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [AllureNUnit]
     [Parallelizable]
     public class SearchTests : BaseTest
     {

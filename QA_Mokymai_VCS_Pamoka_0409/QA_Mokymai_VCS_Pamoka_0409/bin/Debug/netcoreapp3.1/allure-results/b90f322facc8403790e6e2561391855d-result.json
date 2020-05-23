@@ -1,0 +1,79 @@
+{
+  "uuid": "99ec47cb-6595-4b5a-a87d-00d4478ff3b0-tr-0-1007",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika.TestLogin",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestLogin"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginTestKika"
+    }
+  ],
+  "links": [],
+  "name": "TestLogin",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TestLogin",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590212433532,
+          "stop": 1590212435814
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dedc78ff1f4946f6acfc2c9137e6161a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590212425062,
+      "stop": 1590212442209
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590212425061,
+  "stop": 1590212442214
+}

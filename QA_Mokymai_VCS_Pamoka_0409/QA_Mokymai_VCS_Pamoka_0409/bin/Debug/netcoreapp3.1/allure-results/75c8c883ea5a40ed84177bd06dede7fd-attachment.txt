@@ -1,0 +1,1 @@
+screenshot: file://C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\bin\Debug\netcoreapp3.1/Screenshots\AddFirstFoodInList_20-05-23_09_13_33.png

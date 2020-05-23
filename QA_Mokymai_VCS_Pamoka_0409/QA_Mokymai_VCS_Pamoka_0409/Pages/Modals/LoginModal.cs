@@ -2,8 +2,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
-using System.Linq.Expressions;
-using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -26,18 +24,18 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
                 try
                 {
                     // Jei naudojam Implicit wait, pakeiciam jo trukme
-                    //Driver.ChangeImplicitWait(1);
+                    Driver.ChangeImplicitWait(1);
                     return driver.FindElement(elementLoginErrorMessageSelector);
                 } 
                 catch (NoSuchElementException)
                 {
                     return null;
                 }
-                //finally
-                //{
-                //    Vel ijungiam Implicit wait musu pradine trukme
-                //    Driver.TurnOnImplicitWait();
-                //}
+                finally
+                {
+                    //Vel ijungiam Implicit wait musu pradine trukme
+                    Driver.TurnOnImplicitWait();
+                }
             }
         }
         
@@ -89,7 +87,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         //Pakeiciam "void" i pati "LoginModal" keliuose metoduose, gauname "chain" kviesdami siuos metodus
         public LoginModal EnterEmail(string email)
-        {
+        {            
             elementEmailInput.SendKeys(email);
             return this;
         }

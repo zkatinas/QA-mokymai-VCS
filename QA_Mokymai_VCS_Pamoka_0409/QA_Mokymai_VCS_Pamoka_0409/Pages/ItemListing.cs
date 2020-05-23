@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Collections.Generic;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
@@ -26,9 +27,11 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void AddToCartFirstItemFromItemList()
         {
+            Driver.TurnOffImplicitWait();
             WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(itemAddToCartButtonListSelector));
             itemAddToCartButtonList[0].Click();
+            Driver.TurnOnImplicitWait();
         }
     }
 }

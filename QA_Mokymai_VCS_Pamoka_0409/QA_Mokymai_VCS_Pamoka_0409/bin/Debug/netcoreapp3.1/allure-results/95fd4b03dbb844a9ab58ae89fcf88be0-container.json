@@ -1,0 +1,59 @@
+{
+  "uuid": "d6423ee7-8c3d-40db-9810-20cd8ce82150-tc-0-1000",
+  "name": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddDogToyItemKika.AddFirstDogToyItem",
+  "children": [
+    "f7675abe-678b-4761-a8c8-42705461bdb9-tr-0-1001"
+  ],
+  "befores": [
+    {
+      "name": "BaseBeforeTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590216122212,
+      "stop": 1590216122212
+    },
+    {
+      "name": "BeforeTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590216122212,
+      "stop": 1590216122212
+    }
+  ],
+  "afters": [
+    {
+      "name": "QuitDriver",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1590216122212,
+      "stop": 1590216122212
+    }
+  ],
+  "links": [],
+  "start": 1590216089254,
+  "stop": 1590216122264
+}

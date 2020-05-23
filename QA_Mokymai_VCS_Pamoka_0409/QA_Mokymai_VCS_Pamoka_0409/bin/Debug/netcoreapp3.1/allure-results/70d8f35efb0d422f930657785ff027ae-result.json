@@ -1,0 +1,79 @@
+{
+  "uuid": "e9c623bb-d760-4784-aef3-24a459d4d7e3-tr-0-1003",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#5"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddFirstFoodInList"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    }
+  ],
+  "links": [],
+  "name": "AddFirstFoodInList",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddFirstFoodInList",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590217768452,
+          "stop": 1590217770700
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5b0a1fffd5ce4e8f8eaa62d2201291b3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590217760840,
+      "stop": 1590217791862
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590217760839,
+  "stop": 1590217791876
+}

@@ -1,17 +1,14 @@
 ﻿using Microsoft.VisualBasic;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.Extensions;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Utils
 {
     public class ScreenshotMaker
     {
-        public static void TakeScreenshot()
+        public static byte[] TakeScreenshot()
         {
             Screenshot screenshot = ((ITakesScreenshot)Driver.Current).GetScreenshot();
             string screenshotPath = $"{TestContext.CurrentContext.WorkDirectory}/Screenshots";
@@ -23,7 +20,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
 
             // Add that file to NUnit results
             TestContext.AddTestAttachment(screenshotFile, "My Screenshot");
-            //return screenshot.AsByteArray;
+            return screenshot.AsByteArray;
         }
 
     }

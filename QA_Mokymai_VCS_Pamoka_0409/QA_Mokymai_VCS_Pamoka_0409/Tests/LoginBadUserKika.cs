@@ -1,21 +1,17 @@
-﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NUnit.Allure.Core;
+using NUnit.Framework;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [AllureNUnit]
     [Parallelizable]
     public class LoginBadUserKika : BaseTest
     {
-
         [Test]
         public void TestLoginEmpty()
         {
-            Thread.Sleep(2000);
-            popUpModal.ClosePopUpModal();
-            Thread.Sleep(2000);
+            popUpModal.ClosePopUpModal();            
             kikaHomePage.Header.ClickLoginIconButton();
             Thread.Sleep(2000);
             kikaHomePage.loginModal.
@@ -26,6 +22,5 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 
             Thread.Sleep(2000);
         }
-
     }
 }

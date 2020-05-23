@@ -1,8 +1,11 @@
-﻿using NUnit.Framework;
+﻿using NUnit.Allure.Core;
+using NUnit.Framework;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Tests
 {
+    [AllureNUnit]
     [Parallelizable]
     public class AddOneItemKika : BaseTest
     {
@@ -19,8 +22,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         
         [Test]
         public void AddFirstFoodInList()
-        {               
-            Thread.Sleep(2000);
+        {            
+            Waits.WaitUntilModalBackgroundIsNotVisible();
             //Patikriname, ar krepselyje nera prekiu            
             kikaHomePage.Header.AssertCartIconNumber("0");
 
@@ -35,7 +38,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             item.AddToCart();
 
             //Patikriname, ar item idetas i krepseli
-            Thread.Sleep(3500);            
+            Thread.Sleep(4000);            
             kikaHomePage.Header.AssertCartIconNumber("1");
             kikaHomePage.Header.ClickOnCartIcon();
 
