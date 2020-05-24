@@ -13,7 +13,7 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         {            
             popUpModal.ClosePopUpModal();                                   
             kikaHomePage.Header.ClickLoginIconButton();
-            Thread.Sleep(1500);
+            //Thread.Sleep(1500);
             loginModal.EnterEmail("testeris888@test.lt");
             loginModal.EnterPassword("testeris888");
             loginModal.ClickLoginFormButton();

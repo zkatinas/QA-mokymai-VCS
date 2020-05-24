@@ -1,7 +1,10 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
+﻿using Allure.Commons;
+using NUnit.Allure.Core;
+using OpenQA.Selenium;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Collections.Generic;
+using NUnit.Allure.Core;
+using Allure.Commons;
 
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
@@ -16,14 +19,20 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void ClickFirstItem()
         {
-            visibleItems[0].Click();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                visibleItems[0].Click();
+            }, "Click first visible item from the list");
         }        
 
         public KikaHomePage Login(User user)
         {
-            Header.ClickLoginIconButton();
-            //Login metodui paduodam kintamuosius be reiksmiu ???
-            loginModal.Login(user.Username, user.Password);
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                Header.ClickLoginIconButton();
+                //Login metodui paduodam kintamuosius be reiksmiu ???
+                loginModal.Login(user.Username, user.Password);
+            }, "Complete login");
             return this;
         }
     }

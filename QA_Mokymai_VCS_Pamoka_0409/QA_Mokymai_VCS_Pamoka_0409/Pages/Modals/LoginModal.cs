@@ -2,6 +2,8 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
+using NUnit.Allure.Core;
+using Allure.Commons;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -88,40 +90,57 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         //Pakeiciam "void" i pati "LoginModal" keliuose metoduose, gauname "chain" kviesdami siuos metodus
         public LoginModal EnterEmail(string email)
         {            
-            elementEmailInput.SendKeys(email);
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                elementEmailInput.SendKeys(email);                
+            }, "User enter email");
             return this;
         }
 
         public LoginModal EnterPassword(string password)
         {
-            elementPasswordInput.SendKeys(password);
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                elementPasswordInput.SendKeys(password);
+            }, "User enter password");
             return this;
         }
 
         public LoginModal ClickLoginFormButton()
         {
-            elementLoginButton.Click();
+            AllureLifecycle.Instance.WrapInStep(() => 
+            { 
+                elementLoginButton.Click();
+            }, "Click login button");  
             return this;
         }
 
         public LoginModal IsLoginErrorMessageVisible()
         {
-            WebDriverWait wait = new WebDriverWait(Driver.Current, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementLoginErrorMessageSelector));
-            Assert.IsNotNull(elementLoginErrorMessage, "Login error message is not visible!");
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                WebDriverWait wait = new WebDriverWait(Driver.Current, System.TimeSpan.FromSeconds(5));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementLoginErrorMessageSelector));
+                Assert.IsNotNull(elementLoginErrorMessage, "Login error message is not visible!");
+            }, "Check if login error message is visible");
             return this;
         }
 
         public LoginModal ClickLoginErrorMessageCloseButton()
         {
-            elementLoginErrorMessageCloseButton.Click();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                elementLoginErrorMessageCloseButton.Click();
+            }, "Close login error message");
             return this;
         }
         public LoginModal IsLoginErrorMessageNotVisible()
-        {            
-            Assert.IsNull(elementLoginErrorMessage, "Login error message is not closed!");
+        {
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                Assert.IsNull(elementLoginErrorMessage, "Login error message is not closed!");
+            }, "Check if login message is NOT visible");
             return this;
         }
-
     }
 }

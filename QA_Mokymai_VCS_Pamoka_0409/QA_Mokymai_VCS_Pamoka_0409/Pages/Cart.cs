@@ -2,6 +2,8 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
+using NUnit.Allure.Core;
+using Allure.Commons;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -20,16 +22,22 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void AssertItemNameAndItemInCartName(string itemName)
         {
-            string[] itemInCartNameWithCodeList = itemInCartNameWithCode.Text.Split("\r\n");
-            string itemInCartName = itemInCartNameWithCodeList[0];             
-            Assert.AreEqual(itemName.ToLower(), itemInCartName.ToLower());
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                string[] itemInCartNameWithCodeList = itemInCartNameWithCode.Text.Split("\r\n");
+                string itemInCartName = itemInCartNameWithCodeList[0];
+                Assert.AreEqual(itemName.ToLower(), itemInCartName.ToLower());
+            }, "Assert selected item name with item in cart name");
         }
 
         public void AssertItemPriceAndItemInCartPrice(string itemPrice)
         {
-            string[] itemInCartPriceWithTitleList = itemInCartPriceWithTitle.Text.Split("\r\n");
-            string itemInCartPrice = itemInCartPriceWithTitleList[1];
-            Assert.AreEqual(itemPrice.ToLower(), itemInCartPrice.ToLower());
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                string[] itemInCartPriceWithTitleList = itemInCartPriceWithTitle.Text.Split("\r\n");
+                string itemInCartPrice = itemInCartPriceWithTitleList[1];
+                Assert.AreEqual(itemPrice.ToLower(), itemInCartPrice.ToLower());
+            }, "Assert selected item price with item in cart price");
         }
 
         public void AssertFirstItemNameFromListAndItemInCartName(string itemName)
@@ -65,8 +73,10 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void RemoveItemFromCart()
         {
-            elementRemoveItemFromCart.Click();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                elementRemoveItemFromCart.Click();
+            }, "Remove item from cart");
         }
-        
     }
 }

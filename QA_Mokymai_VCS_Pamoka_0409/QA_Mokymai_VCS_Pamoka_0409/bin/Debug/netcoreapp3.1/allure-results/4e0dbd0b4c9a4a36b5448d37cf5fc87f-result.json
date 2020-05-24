@@ -1,0 +1,197 @@
+{
+  "uuid": "ba264ce7-ad4f-4497-8f1c-34dc980088fe-tr-0-1009",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestSearchWorks"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    }
+  ],
+  "links": [],
+  "name": "TestSearchWorks",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <a href=\"\" rel=\"nofollow\" id=\"quick_search_show\">...</a> is not clickable at point (1087, 55). Other element would receive the click: <div id=\"dynamicModal\" class=\"modal fade login_popup in\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"confirm-modal\" aria-hidden=\"true\" style=\"display: block;\">...</div>\n  (Session info: chrome=83.0.4103.61)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.<ClickOnSearchIcon>b__21_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 57\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.ClickOnSearchIcon() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 55\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 23"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TestSearchWorks",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <a href=\"\" rel=\"nofollow\" id=\"quick_search_show\">...</a> is not clickable at point (1087, 55). Other element would receive the click: <div id=\"dynamicModal\" class=\"modal fade login_popup in\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"confirm-modal\" aria-hidden=\"true\" style=\"display: block;\">...</div>\n  (Session info: chrome=83.0.4103.61)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.<ClickOnSearchIcon>b__21_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 57\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.ClickOnSearchIcon() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 55\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 23"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590322814705,
+          "stop": 1590322817099
+        },
+        {
+          "name": "Complete login",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Click login icon",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1590322817101,
+              "stop": 1590322817797
+            },
+            {
+              "name": "User enter email",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1590322817798,
+              "stop": 1590322818829
+            },
+            {
+              "name": "User enter password",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1590322818829,
+              "stop": 1590322818955
+            },
+            {
+              "name": "Click login button",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1590322818955,
+              "stop": 1590322819189
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590322817100,
+          "stop": 1590322819189
+        },
+        {
+          "name": "Click on search icon",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <a href=\"\" rel=\"nofollow\" id=\"quick_search_show\">...</a> is not clickable at point (1087, 55). Other element would receive the click: <div id=\"dynamicModal\" class=\"modal fade login_popup in\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"confirm-modal\" aria-hidden=\"true\" style=\"display: block;\">...</div>\n  (Session info: chrome=83.0.4103.61)",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.KikaHeaderSection.<ClickOnSearchIcon>b__21_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Sections\\KikaHeaderSection.cs:line 57\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1590322819192,
+          "stop": 1590322820428
+        },
+        {
+          "name": "Failed test screenshot",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Failed Screenshot",
+              "source": "aefc2ed032744f689729f8197ed9b393-attachmentpng",
+              "type": "image/png"
+            }
+          ],
+          "parameters": [],
+          "start": 1590322820461,
+          "stop": 1590322821132
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "8cc50a8dbabc4518b2ce512aefc1acf0-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1590322806676,
+      "stop": 1590322821358
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1590322806674,
+  "stop": 1590322821365
+}

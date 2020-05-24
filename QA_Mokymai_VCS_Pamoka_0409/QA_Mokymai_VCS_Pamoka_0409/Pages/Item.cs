@@ -1,6 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System.Collections.Generic;
+using NUnit.Allure.Core;
+using Allure.Commons;
+using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -19,24 +22,42 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
         
         public string GetItemName()
         {
-            return itemNameInItemPage.Text;
+            var itemName = "";
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                itemName = itemNameInItemPage.Text;
+            }, "Get selected item name");
+            return itemName;
         }
 
         public string GetItemPrice()
         {
-            return itemPriceInItemPage.Text;
+            var itemPrice = "";
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                itemPrice = itemPriceInItemPage.Text;
+            }, "Get selected item price");
+            return itemPrice;
         }
 
         public void SelectItemQuantity()
         {
-            selectItemQuantity[0].Click();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                selectItemQuantity[0].Click();
+            }, "Select item quantity from the list");
         }
 
         public void AddToCart()
         {
-            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementAddToCartButtonSelector));
-            elementAddToCartButton.Click();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                Driver.TurnOffImplicitWait();
+                WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementAddToCartButtonSelector));
+                elementAddToCartButton.Click();
+                Driver.TurnOnImplicitWait();
+            }, "Add item to cart");
         }       
     }
 }

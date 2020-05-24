@@ -3,6 +3,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System;
+using NUnit.Allure.Core;
+using Allure.Commons;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
@@ -26,8 +28,11 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public void ClickLoginIconButton()
         {
-            Waits.WaitUntilModalBackgroundIsNotVisible();
-            elementLoginIconButton.Click();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                Waits.WaitUntilModalBackgroundIsNotVisible();
+                elementLoginIconButton.Click();
+            }, "Click login icon");
 
             // Try catch ?? Nes interceptina click'a.
             //for (int i = 0; i < 4; i++)
@@ -47,47 +52,65 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 
         public SearchPage ClickOnSearchIcon()
         {
-            elementSearchIcon.Click();
+            AllureLifecycle.Instance.WrapInStep(() => 
+            {
+                elementSearchIcon.Click();
+            }, "Click on search icon");
             return PageFactory.SearchPage;
         }
 
         public void AssertCartIconNumber(string itemNumber)
         {
-            Assert.AreEqual(itemNumber, itemCountInCart.Text);
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                Assert.AreEqual(itemNumber, itemCountInCart.Text);
+            }, "Assert item number at the cart icon");
         }
 
         public void ClickOnCartIcon()
         {
-            elementCart.Click();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                elementCart.Click();
+            }, "Click on cart icon");
         }
 
         public void ClickOnProfileMenuIcon()
         {
-            //Driver.TurnOffImplicitWait();
-            //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementProfileMenuButtonSelector));
-            elementProfileMenuButton.Click();
-            //Driver.TurnOnImplicitWait();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                //Driver.TurnOffImplicitWait();
+                //WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+                //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementProfileMenuButtonSelector));
+                elementProfileMenuButton.Click();
+                //Driver.TurnOnImplicitWait();
+            }, "Click on profile icon");
         }
 
         public void CheckIfUserIsLogged()
         {
-            Driver.TurnOffImplicitWait();
-            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementWishlistCountSelector));
-            //Assert.AreEqual(loggedUserProfileElement, elementWishlistCount);
-            Assert.IsTrue(elementWishlistCount.Text != null, "Wishlist is not visible");
-            Console.WriteLine(elementWishlistCount.Text);
-            Driver.TurnOnImplicitWait();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                Driver.TurnOffImplicitWait();
+                WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(elementWishlistCountSelector));
+                //Assert.AreEqual(loggedUserProfileElement, elementWishlistCount);
+                Assert.IsTrue(elementWishlistCount.Text != null, "Wishlist is not visible");
+                Console.WriteLine(elementWishlistCount.Text);
+                Driver.TurnOnImplicitWait();
+            }, "Check if user is logged");
         }
 
         public void LogOut()
         {
-            Driver.TurnOffImplicitWait();
-            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLogOutSelector));
-            elementLogOut.Click();
-            Driver.TurnOnImplicitWait();
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                Driver.TurnOffImplicitWait();
+                WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(5));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(elementLogOutSelector));
+                elementLogOut.Click();
+                Driver.TurnOnImplicitWait();
+            }, "Log out");
         }
     }
 }

@@ -25,7 +25,5 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
                 .Search(searchInput).
                 AssertSearchResultsContainsText(searchInput);           
         }
-
-
     }
 }

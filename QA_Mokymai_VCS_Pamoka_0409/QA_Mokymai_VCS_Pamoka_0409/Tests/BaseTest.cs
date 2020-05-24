@@ -52,11 +52,12 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         //}
 
         protected void LoginWithtUser(string username, string password)
-        {            
-            kikaHomePage.loginModal.Login(username, password);
+        {
+            AllureLifecycle.Instance.WrapInStep(() =>
+            {
+                kikaHomePage.loginModal.Login(username, password);
+            }, "Login with registered user");
         }
-
-
         
         protected void MakeScreenshotOnTestFailure()
         {
