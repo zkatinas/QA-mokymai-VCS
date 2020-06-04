@@ -3,8 +3,6 @@ using NUnit.Allure.Core;
 using OpenQA.Selenium;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 using System.Collections.Generic;
-using NUnit.Allure.Core;
-using Allure.Commons;
 
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages

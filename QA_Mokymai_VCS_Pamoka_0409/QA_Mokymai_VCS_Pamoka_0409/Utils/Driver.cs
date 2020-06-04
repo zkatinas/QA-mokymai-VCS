@@ -3,8 +3,10 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
+using RestSharp;
 using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Utils
@@ -51,6 +53,25 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Utils
         {
             Current.Quit();
         }        
+
+        public static void SetCookies(IList<RestResponseCookie> cookiesList)
+        {
+            foreach (var cookie in cookiesList)
+            {
+                var seleniumCookie = new Cookie(cookie.Name, cookie.Value, cookie.Path);
+                Current.Manage().Cookies.AddCookie(seleniumCookie);
+            }            
+        }
+
+        public static void WriteAllCookies()
+        {
+            var cookies = Current.Manage().Cookies.AllCookies;
+            foreach (var cookie in cookies)
+            {
+                Console.WriteLine($" cookie: {cookie.Name} value: {cookie.Value} domain: {cookie.Domain} path: {cookie.Path}");
+            }
+        }
+
 
         public static void TurnOnImplicitWait()
         {

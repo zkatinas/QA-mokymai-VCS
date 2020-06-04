@@ -1,0 +1,61 @@
+{
+  "uuid": "3423cdbb-fba0-4518-bc05-94867893d334-tc-0-1008",
+  "name": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "children": [
+    "84ef3f2a-ae9c-4cdc-8876-1265422fa893-tr-0-1009"
+  ],
+  "befores": [
+    {
+      "name": "BaseBeforeTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591282576365,
+      "stop": 1591282576365
+    },
+    {
+      "name": "Before",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 5 seconds\r\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#editable_popup[style*='display: block;'] .close\"}\n  (Session info: chrome=83.0.4103.61)",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.PopUpModal.<ClosePopUpModal>b__3_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Modals\\PopUpModal.cs:line 25\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.PopUpModal.ClosePopUpModal() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Modals\\PopUpModal.cs:line 21\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.Before() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 15\r\n--NoSuchElementException\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass23_0.<CssSelector>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591282576370,
+      "stop": 1591282576370
+    }
+  ],
+  "afters": [
+    {
+      "name": "QuitDriver",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591282576375,
+      "stop": 1591282576375
+    }
+  ],
+  "links": [],
+  "start": 1591282560634,
+  "stop": 1591282576679
+}

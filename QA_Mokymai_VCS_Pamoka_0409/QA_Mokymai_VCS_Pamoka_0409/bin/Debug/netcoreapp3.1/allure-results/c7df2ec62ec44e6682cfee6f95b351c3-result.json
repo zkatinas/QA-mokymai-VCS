@@ -1,0 +1,151 @@
+{
+  "uuid": "03d57b24-fce7-4cb7-8643-05b03b304993-tr-0-1009",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#8"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestSearchWorks"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    }
+  ],
+  "links": [],
+  "name": "TestSearchWorks",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Search result count is: $0\r\n  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.<>c__DisplayClass9_0.<AssertSearchResultsContainsText>b__0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 35\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.AssertSearchResultsContainsText(String text) in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 32\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 24\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TestSearchWorks",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Search result count is: $0\r\n  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.<>c__DisplayClass9_0.<AssertSearchResultsContainsText>b__0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 35\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.AssertSearchResultsContainsText(String text) in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 32\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 24\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591282072773,
+          "stop": 1591282074845
+        },
+        {
+          "name": "Click on search icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591282077702,
+          "stop": 1591282078091
+        },
+        {
+          "name": "Start the search",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591282078093,
+          "stop": 1591282078505
+        },
+        {
+          "name": "Check if search result contains searchable text",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  Search result count is: $0\r\n  Expected: True\r\n  But was:  False\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message)\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\r\n   at NUnit.Framework.Assert.IsTrue(Boolean condition, String message, Object[] args)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.<>c__DisplayClass9_0.<AssertSearchResultsContainsText>b__0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 35\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591282078506,
+          "stop": 1591282098644
+        },
+        {
+          "name": "Failed test screenshot",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Failed Screenshot",
+              "source": "6395a112a39b4009919f4017ee89f99e-attachmentpng",
+              "type": "image/png"
+            }
+          ],
+          "parameters": [],
+          "start": 1591282098660,
+          "stop": 1591282099474
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7e784dbf9d394a0ca9ea4380c293502f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1591282060628,
+      "stop": 1591282100189
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1591282060627,
+  "stop": 1591282100195
+}

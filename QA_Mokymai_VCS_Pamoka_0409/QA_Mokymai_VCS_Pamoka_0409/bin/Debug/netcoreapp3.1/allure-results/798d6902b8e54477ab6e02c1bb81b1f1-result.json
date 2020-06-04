@@ -1,0 +1,350 @@
+{
+  "uuid": "0da81f69-5f49-44e6-80d5-25f389ba3590-tr-0-1003",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddFirstFoodInList"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika"
+    }
+  ],
+  "links": [],
+  "name": "AddFirstFoodInList",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddFirstFoodInList",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276693516,
+          "stop": 1591276695099
+        },
+        {
+          "name": "Click login icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276695102,
+          "stop": 1591276696524
+        },
+        {
+          "name": "Login with registered user",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "User enter email",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1591276698538,
+              "stop": 1591276701392
+            },
+            {
+              "name": "User enter password",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1591276701392,
+              "stop": 1591276702860
+            },
+            {
+              "name": "Click login button",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1591276702860,
+              "stop": 1591276703555
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276698538,
+          "stop": 1591276703555
+        },
+        {
+          "name": "Assert item number at the cart icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276710437,
+          "stop": 1591276710640
+        },
+        {
+          "name": "Click first visible item from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276710640,
+          "stop": 1591276716867
+        },
+        {
+          "name": "Get selected item name",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276716868,
+          "stop": 1591276716957
+        },
+        {
+          "name": "Get selected item price",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276716958,
+          "stop": 1591276717047
+        },
+        {
+          "name": "Select item quantity from the list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276717048,
+          "stop": 1591276717332
+        },
+        {
+          "name": "Add item to cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276717333,
+          "stop": 1591276717823
+        },
+        {
+          "name": "Assert item number at the cart icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276721834,
+          "stop": 1591276721883
+        },
+        {
+          "name": "Click on cart icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276721883,
+          "stop": 1591276723689
+        },
+        {
+          "name": "Assert selected item name with item in cart name",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276723689,
+          "stop": 1591276723725
+        },
+        {
+          "name": "Assert selected item price with item in cart price",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276723726,
+          "stop": 1591276723754
+        },
+        {
+          "name": "Remove item from cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276723754,
+          "stop": 1591276723937
+        },
+        {
+          "name": "Click on profile icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276725939,
+          "stop": 1591276726101
+        },
+        {
+          "name": "Log out",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276726102,
+          "stop": 1591276728606
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "29a4315d69fc4ec6bff7108b1bbd26d6-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1591276670350,
+      "stop": 1591276732218
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1591276670347,
+  "stop": 1591276732218
+}

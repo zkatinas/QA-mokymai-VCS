@@ -1,0 +1,59 @@
+{
+  "uuid": "06e3dc88-055e-4de0-9d7b-94160bb3bb1a-tc-0-1002",
+  "name": "QA_Mokymai_VCS_Pamoka_0409.Tests.AddOneItemKika.AddFirstFoodInList",
+  "children": [
+    "0da81f69-5f49-44e6-80d5-25f389ba3590-tr-0-1003"
+  ],
+  "befores": [
+    {
+      "name": "BaseBeforeTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591276732214,
+      "stop": 1591276732214
+    },
+    {
+      "name": "Before",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591276732214,
+      "stop": 1591276732214
+    }
+  ],
+  "afters": [
+    {
+      "name": "QuitDriver",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591276732215,
+      "stop": 1591276732215
+    }
+  ],
+  "links": [],
+  "start": 1591276670342,
+  "stop": 1591276732223
+}

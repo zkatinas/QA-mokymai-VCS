@@ -1,0 +1,9 @@
+8tabltqherjpi8vl1t8i1oatm6
+ cookie: _fbp value: fb.1.1591282783608.2400894 domain: .kika.lt path: /
+ cookie: user_token value: 5ed90c35ec662 domain: www.kika.lt path: /
+ cookie: www_kika_lt value: 8tabltqherjpi8vl1t8i1oatm6 domain: www.kika.lt path: /
+ cookie: _gid value: GA1.2.1705249458.1591282783 domain: .kika.lt path: /
+ cookie: popup_4 value: 2020-06-04+17%3A59%3A01 domain: www.kika.lt path: /
+ cookie: _gat value: 1 domain: .kika.lt path: /
+ cookie: _ga value: GA1.2.1563232529.1591282783 domain: .kika.lt path: /
+screenshot: file://C:\Users\zkatinas\Documents\GitHub\QA-mokymai-VCS\QA_Mokymai_VCS_Pamoka_0409\QA_Mokymai_VCS_Pamoka_0409\bin\Debug\netcoreapp3.1/Screenshots\TestSearchWorks_20-06-04_18_00_12_1943.png

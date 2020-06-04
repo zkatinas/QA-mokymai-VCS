@@ -3,6 +3,7 @@ using NUnit.Allure.Core;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
+using QA_Mokymai_VCS_Pamoka_0409.API;
 using QA_Mokymai_VCS_Pamoka_0409.Pages;
 using QA_Mokymai_VCS_Pamoka_0409.Utils;
 
@@ -46,10 +47,14 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
             kikaHomePage.Login(User.DefaultKikaUser);
         }
 
-        //protected void LoginWithtUser(User user)
-        //{
-        //    LoginWithtUser(user.Username, user.Password);
-        //}
+        protected void LoginWithtUser(User user)
+        {
+            //LoginWithtUser(user.Username, user.Password);
+            var cookies = LoginAPI.Login(user);
+            Driver.SetCookies(cookies);
+            Driver.Current.Url = "https://www.kika.lt/";
+            Driver.WriteAllCookies();
+        }
 
         protected void LoginWithtUser(string username, string password)
         {
@@ -71,7 +76,6 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
                         AllureLifecycle.Instance.AddAttachment("Failed Screenshot", "image/png", screenshots, "png");
                    
                     }, "Failed test screenshot");
-                    
                 }
             }
             catch (WebDriverException)

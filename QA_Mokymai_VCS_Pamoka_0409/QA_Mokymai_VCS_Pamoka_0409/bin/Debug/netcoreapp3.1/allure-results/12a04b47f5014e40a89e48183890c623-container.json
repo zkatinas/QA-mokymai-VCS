@@ -1,0 +1,59 @@
+{
+  "uuid": "c06b7323-b1e3-4b52-a10f-c13bf4683554-tc-0-1008",
+  "name": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "children": [
+    "6d74dd86-a13b-4349-813a-6e44e1d2e8c4-tr-0-1009"
+  ],
+  "befores": [
+    {
+      "name": "BaseBeforeTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591282762836,
+      "stop": 1591282762836
+    },
+    {
+      "name": "Before",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591282762836,
+      "stop": 1591282762836
+    }
+  ],
+  "afters": [
+    {
+      "name": "QuitDriver",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1591282762837,
+      "stop": 1591282762837
+    }
+  ],
+  "links": [],
+  "start": 1591282722352,
+  "stop": 1591282763021
+}

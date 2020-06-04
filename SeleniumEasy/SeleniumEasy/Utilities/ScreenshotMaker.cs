@@ -1,0 +1,41 @@
+﻿using Microsoft.VisualBasic;
+using NUnit.Framework;
+using NUnit.Framework.Interfaces;
+using OpenQA.Selenium;
+using System;
+using System.IO;
+
+namespace SeleniumEasy.Utilities
+{
+    public class ScreenshotMaker
+    {
+        public static byte[] TakeScreenshot()
+        {
+            Screenshot screenshot = ((ITakesScreenshot)Driver.CurrentDriver).GetScreenshot();
+            string screenshotPath = $"{TestContext.CurrentContext.WorkDirectory}/Screenshots";
+            Directory.CreateDirectory(screenshotPath);
+            string screenshotFile = Path.Combine(screenshotPath, $"{TestContext.CurrentContext.Test.Name}_{DateAndTime.Now.ToString("yy-MM-dd_HH_mm_ss_ffff")}.png");
+
+            screenshot.SaveAsFile(screenshotFile, ScreenshotImageFormat.Png);
+            Console.WriteLine("screenshot: file://" + screenshotFile);
+
+            // Add that file to NUnit results
+            TestContext.AddTestAttachment(screenshotFile, "My Screenshot");
+            return screenshot.AsByteArray;
+        }
+
+        public static void MakeScreenshotOnTestFailure()
+        {
+            try
+            {
+                if (TestContext.CurrentContext.Result.Outcome.Status != TestStatus.Passed)
+                {                   
+                    var screenshots = ScreenshotMaker.TakeScreenshot();
+                }
+            }
+            catch (WebDriverException)
+            {
+            }
+        }
+    }
+}

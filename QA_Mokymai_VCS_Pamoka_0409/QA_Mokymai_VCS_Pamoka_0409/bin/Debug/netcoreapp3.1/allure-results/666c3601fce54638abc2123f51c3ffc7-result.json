@@ -1,0 +1,154 @@
+{
+  "uuid": "43b37d65-41d7-4efe-a328-d13392f2e1f1-tr-0-1005",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginBadUserKika.TestLoginEmpty",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginBadUserKika.TestLoginEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#4"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginBadUserKika"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestLoginEmpty"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.LoginBadUserKika"
+    }
+  ],
+  "links": [],
+  "name": "TestLoginEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TestLoginEmpty",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276693758,
+          "stop": 1591276696425
+        },
+        {
+          "name": "Click login icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276696425,
+          "stop": 1591276698426
+        },
+        {
+          "name": "Click login button",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276700450,
+          "stop": 1591276701232
+        },
+        {
+          "name": "Check if login error message is visible",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276701235,
+          "stop": 1591276702524
+        },
+        {
+          "name": "Close login error message",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276702525,
+          "stop": 1591276703107
+        },
+        {
+          "name": "Check if login message is NOT visible",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591276703108,
+          "stop": 1591276704746
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "44f695dcd24d42bdbddb2110de0ba955-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1591276670350,
+      "stop": 1591276717472
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1591276670347,
+  "stop": 1591276717510
+}

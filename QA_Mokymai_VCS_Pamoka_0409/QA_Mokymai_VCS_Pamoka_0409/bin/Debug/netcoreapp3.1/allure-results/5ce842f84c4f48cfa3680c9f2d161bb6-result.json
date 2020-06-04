@@ -1,0 +1,107 @@
+{
+  "uuid": "84ef3f2a-ae9c-4cdc-8876-1265422fa893-tr-0-1009",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#7"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestSearchWorks"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    }
+  ],
+  "links": [],
+  "name": "TestSearchWorks",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 5 seconds\r\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#editable_popup[style*='display: block;'] .close\"}\n  (Session info: chrome=83.0.4103.61)",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.PopUpModal.<ClosePopUpModal>b__3_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Modals\\PopUpModal.cs:line 25\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.PopUpModal.ClosePopUpModal() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Modals\\PopUpModal.cs:line 21\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.Before() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 15\r\n--NoSuchElementException\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass23_0.<CssSelector>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)"
+  },
+  "stage": "finished",
+  "description": "\nBefore SetUp method failed\n",
+  "steps": [
+    {
+      "name": "TestSearchWorks skipped because of BaseBeforeTest failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 5 seconds\r\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#editable_popup[style*='display: block;'] .close\"}\n  (Session info: chrome=83.0.4103.61)",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.PopUpModal.<ClosePopUpModal>b__3_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Modals\\PopUpModal.cs:line 25\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.PopUpModal.ClosePopUpModal() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Modals\\PopUpModal.cs:line 21\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.Before() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 15\r\n--NoSuchElementException\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByCssSelector(String cssSelector)\r\n   at OpenQA.Selenium.By.<>c__DisplayClass23_0.<CssSelector>b__0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)\r\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "broken",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 5 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.PopUpModal.<ClosePopUpModal>b__3_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\Modals\\PopUpModal.cs:line 25\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591282567619,
+          "stop": 1591282573177
+        },
+        {
+          "name": "Failed test screenshot",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "Failed Screenshot",
+              "source": "60492cd8e7154479bb05058cc2b6648c-attachmentpng",
+              "type": "image/png"
+            }
+          ],
+          "parameters": [],
+          "start": 1591282573196,
+          "stop": 1591282574215
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "23e01eaada724b8a8d733bcc66737afd-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1591282560641,
+      "stop": 1591282576391
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1591282560640,
+  "stop": 1591282576423
+}

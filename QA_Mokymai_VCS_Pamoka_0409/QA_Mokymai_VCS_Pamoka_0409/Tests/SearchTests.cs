@@ -13,7 +13,8 @@ namespace QA_Mokymai_VCS_Pamoka_0409.Tests
         public void Before()
         {
             popUpModal.ClosePopUpModal();
-            kikaHomePage.Login(User.DefaultKikaUser);
+            //kikaHomePage.Login(User.DefaultKikaUser);
+            LoginWithtUser(User.DefaultKikaUser);
         }
 
         [Test]

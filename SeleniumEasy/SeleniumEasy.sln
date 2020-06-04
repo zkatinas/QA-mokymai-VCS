@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumEasy", "SeleniumEasy\SeleniumEasy.csproj", "{22A08054-54CA-4B65-AB3F-D6506E63EEA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A08054-54CA-4B65-AB3F-D6506E63EEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A08054-54CA-4B65-AB3F-D6506E63EEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A08054-54CA-4B65-AB3F-D6506E63EEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A08054-54CA-4B65-AB3F-D6506E63EEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {896F4595-0F6B-4CC7-B86F-FEC9FB1BCD9A}
+	EndGlobalSection
+EndGlobal

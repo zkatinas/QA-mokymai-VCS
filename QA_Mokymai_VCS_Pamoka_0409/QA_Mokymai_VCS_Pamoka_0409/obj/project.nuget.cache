@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "u1N9ZCXVeJdQSKIoGMwGoLL5YyAo8biJ8AwvcsIKPWbhSmFX0yYB6bHJyQizJs3FQSUw9YvDXJVKPhGzK/ilTQ==",
+  "dgSpecHash": "0sXSRjk3NRY4T+I8escvc2nk6WocwXBtPH4K5aGCVcCKm3zTz4/cLOJdDliDEVgMLkPwzUnRvc0qYxgK2UW+2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\zkatinas\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\nunit.allure\\1.0.9\\nunit.allure.1.0.9.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
+    "C:\\Users\\zkatinas\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
     "C:\\Users\\zkatinas\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
