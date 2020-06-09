@@ -8,6 +8,7 @@ using Allure.Commons;
 
 namespace QA_Mokymai_VCS_Pamoka_0409.Pages
 {
+    
     public class SearchPage : BasePage
     {
                

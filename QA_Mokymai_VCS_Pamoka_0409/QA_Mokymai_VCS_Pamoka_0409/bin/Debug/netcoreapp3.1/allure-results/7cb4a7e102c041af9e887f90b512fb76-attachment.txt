@@ -1,0 +1,8 @@
+mh059v0m25rdvp0921tf1ht5sf
+ cookie: customer value: testeris888%40test.lt domain: www.kika.lt path: /
+ cookie: user_token value: 5edf8de509180 domain: www.kika.lt path: /
+ cookie: _gid value: GA1.2.2039114077.1591709202 domain: .kika.lt path: /
+ cookie: www_kika_lt value: mh059v0m25rdvp0921tf1ht5sf domain: www.kika.lt path: /
+ cookie: _fbp value: fb.1.1591709202933.1659295559 domain: .kika.lt path: /
+ cookie: _gat value: 1 domain: .kika.lt path: /
+ cookie: _ga value: GA1.2.371219045.1591709202 domain: .kika.lt path: /

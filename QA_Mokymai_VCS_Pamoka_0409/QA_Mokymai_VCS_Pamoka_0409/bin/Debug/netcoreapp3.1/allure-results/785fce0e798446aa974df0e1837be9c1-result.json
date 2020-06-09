@@ -1,0 +1,147 @@
+{
+  "uuid": "287ac79d-47a3-4733-ace9-bf7ac963c8da-tr-0-1009",
+  "historyId": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "fullName": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ZKATINAS"
+    },
+    {
+      "name": "testClass",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TestSearchWorks"
+    },
+    {
+      "name": "package",
+      "value": "QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests"
+    }
+  ],
+  "links": [],
+  "name": "TestSearchWorks",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Search result count is: $0\r\n  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.<>c__DisplayClass9_0.<AssertSearchResultsContainsText>b__0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 35\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.AssertSearchResultsContainsText(String text) in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 32\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 24\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "TestSearchWorks",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Search result count is: $0\r\n  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.<>c__DisplayClass9_0.<AssertSearchResultsContainsText>b__0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 35\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.AssertSearchResultsContainsText(String text) in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 32\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.SearchTests.TestSearchWorks() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\SearchTests.cs:line 24\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Closes pop-up modal",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591709203320,
+          "stop": 1591709205133
+        },
+        {
+          "name": "Click on search icon",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591709207804,
+          "stop": 1591709208107
+        },
+        {
+          "name": "Start the search",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591709208108,
+          "stop": 1591709208634
+        },
+        {
+          "name": "Check if search result contains searchable text",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "  Search result count is: $0\r\n  Expected: True\r\n  But was:  False\r\n",
+            "trace": "   at NUnit.Framework.Assert.ReportFailure(String message)\r\n   at NUnit.Framework.Assert.ReportFailure(ConstraintResult result, String message, Object[] args)\r\n   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)\r\n   at NUnit.Framework.Assert.IsTrue(Boolean condition, String message, Object[] args)\r\n   at QA_Mokymai_VCS_Pamoka_0409.Pages.SearchPage.<>c__DisplayClass9_0.<AssertSearchResultsContainsText>b__0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Pages\\SearchPage.cs:line 35\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591709208634,
+          "stop": 1591709223207
+        },
+        {
+          "name": "Failed test screenshot",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=83.0.4103.97)",
+            "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()\r\n   at QA_Mokymai_VCS_Pamoka_0409.Utils.ScreenshotMaker.TakeScreenshot() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Utils\\Screenshot.cs:line 13\r\n   at QA_Mokymai_VCS_Pamoka_0409.Tests.BaseTest.<>c.<MakeScreenshotOnTestFailure>b__19_0() in C:\\Users\\zkatinas\\Documents\\GitHub\\QA-mokymai-VCS\\QA_Mokymai_VCS_Pamoka_0409\\QA_Mokymai_VCS_Pamoka_0409\\Tests\\BaseTest.cs:line 75\r\n   at NUnit.Allure.Core.AllureExtensions.WrapInStep(AllureLifecycle lifecycle, Action action, String stepName, String callerName)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1591709223215,
+          "stop": 1591709223234
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7cb4a7e102c041af9e887f90b512fb76-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1591709192678,
+      "stop": 1591709223668
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1591709192676,
+  "stop": 1591709223717
+}
